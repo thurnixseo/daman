@@ -63,7 +63,7 @@ Hệ thống sẽ hiển thị thông tin tài khoản ngân hàng đại diện
 - Nội Dung Chuyển Khoản (Mã giao dịch)
 
 <div class="success-box">
-✅ <strong>Lưu ý:</strong> Luôn lấy thông tin tài khoản mới nhất trực tiếp từ website cho **mỗi lần nạp**. Không chuyển vào các số tài khoản cũ bạn đã lưu trước đó vì 88AA có thể thay đổi tài khoản nhận để đảm bảo an toàn.
+✅ <strong>Lưu ý:</strong> Luôn lấy thông tin tài khoản mới nhất trực tiếp từ website cho <strong>mỗi lần nạp</strong>. Không chuyển vào các số tài khoản cũ bạn đã lưu trước đó vì 88AA có thể thay đổi tài khoản nhận để đảm bảo an toàn.
 </div>
 
 ### Bước 4: Thực Hiện Chuyển Tiền
@@ -75,7 +75,7 @@ Mở ứng dụng Mobile Banking của bạn, thực hiện lệnh chuyển ti�
 Sau khi chuyển khoản thành công, hãy quay lại trang nạp tiền của 88AA. Điền số tiền bạn vừa chuyển và nhấn nút **"Xác Nhận Nạp Tiền"** hoặc **"Hoàn Tất"**. Hệ thống sẽ tự động đối soát và cộng tiền vào tài khoản của bạn trong vòng vài phút.
 
 <div class="warning-box">
-⚠️ <strong>Cảnh Báo:</strong> Nếu bạn nhập sai **Nội dung chuyển khoản**, giao dịch của bạn có thể bị xử lý chậm hơn rất nhiều hoặc bị thất lạc. Hãy luôn sao chép (copy) và dán (paste) để đảm bảo tính chính xác 100%.
+⚠️ <strong>Cảnh Báo:</strong> Nếu bạn nhập sai <strong>Nội dung chuyển khoản</strong>, giao dịch của bạn có thể bị xử lý chậm hơn rất nhiều hoặc bị thất lạc. Hãy luôn sao chép (copy) và dán (paste) để đảm bảo tính chính xác 100%.
 </div>
 
 ## Những Lưu Ý Vàng Khi Nạp Tiền

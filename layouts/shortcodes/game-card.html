@@ -1,0 +1,47 @@
+{{ $title := .Get "title" }}
+{{ $image := .Get "image" }}
+{{ $description := .Get "description" }}
+{{ $rating := .Get "rating" | default "5" }}
+{{ $category := .Get "category" }}
+{{ $link := .Get "link" }}
+{{ $difficulty := .Get "difficulty" | default "Dễ" }}
+
+<div class="game-card group cursor-pointer transform hover:scale-105 transition-all duration-300">
+    <div class="relative overflow-hidden rounded-t-lg">
+        <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+        <div class="absolute top-3 right-3">
+            <span class="bg-{{ if eq $difficulty "Dễ" }}green{{ else if eq $difficulty "Trung bình" }}yellow{{ else }}red{{ end }}-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+                {{ $difficulty }}
+            </span>
+        </div>
+        <div class="absolute bottom-3 left-3">
+            <span class="bg-game-primary text-white px-2 py-1 rounded-full text-xs font-bold">
+                {{ $category }}
+            </span>
+        </div>
+    </div>
+    
+    <div class="p-4">
+        <h3 class="font-bold text-lg mb-2 text-gray-800">{{ $title }}</h3>
+        <p class="text-gray-600 text-sm mb-3">{{ $description }}</p>
+        
+        <!-- Rating Stars -->
+        <div class="flex items-center mb-3">
+            {{ range seq (int $rating) }}
+                <svg class="w-4 h-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                </svg>
+            {{ end }}
+            {{ range seq (sub 5 (int $rating)) }}
+                <svg class="w-4 h-4 text-gray-300 fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/>
+                </svg>
+            {{ end }}
+            <span class="text-gray-500 text-sm ml-2">({{ $rating }}/5)</span>
+        </div>
+        
+        <a href="{{ $link }}" class="btn-primary w-full text-center block hover:shadow-lg">
+            🎮 Chơi ngay
+        </a>
+    </div>
+</div>

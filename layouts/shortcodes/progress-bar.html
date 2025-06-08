@@ -1,0 +1,17 @@
+{{ $label := .Get "label" }}
+{{ $value := .Get "value" }}
+{{ $max := .Get "max" | default "100" }}
+{{ $color := .Get "color" | default "bg-game-primary" }}
+
+{{ $percentage := div (mul (int $value) 100) (int $max) }}
+
+<div class="mb-4">
+    <div class="flex justify-between text-sm text-gray-600 mb-1">
+        <span>{{ $label }}</span>
+        <span>{{ $value }}/{{ $max }}</span>
+    </div>
+    <div class="w-full bg-gray-200 rounded-full h-3">
+        <div class="{{ $color }} h-3 rounded-full transition-all duration-500 ease-out" 
+             style="width: {{ $percentage }}%"></div>
+    </div>
+</div>

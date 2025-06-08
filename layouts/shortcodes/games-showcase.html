@@ -1,0 +1,61 @@
+{{ $title := .Get "title" | default "🎮 Game Hot Nhất" }}
+
+<section class="py-20 bg-gradient-to-b from-gray-800 to-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-white mb-4">{{ $title }}</h2>
+            <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                Khám phá những game hot nhất với đồ họa đẹp mắt và jackpot khủng
+            </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Game 1: Bắn Cá -->
+            <div class="group bg-gradient-to-br from-blue-600 to-blue-800 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="text-6xl mb-4 group-hover:scale-110 transition-transform">🐟</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Bắn Cá 3D</h3>
+                <p class="text-blue-100 text-sm mb-4">Jackpot: 1.2 tỷ VNĐ</p>
+                <a href="https://88aa.com.co" class="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                    Chơi Ngay
+                </a>
+            </div>
+            
+            <!-- Game 2: Xổ Số -->
+            <div class="group bg-gradient-to-br from-red-600 to-red-800 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="text-6xl mb-4 group-hover:scale-110 transition-transform">🎲</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Xổ Số Online</h3>
+                <p class="text-red-100 text-sm mb-4">Giải Đặc Biệt: 2 tỷ VNĐ</p>
+                <a href="https://88aa.com.co" class="bg-white text-red-600 px-4 py-2 rounded-lg font-medium hover:bg-red-50 transition-colors">
+                    Chơi Ngay
+                </a>
+            </div>
+            
+            <!-- Game 3: Casino -->
+            <div class="group bg-gradient-to-br from-purple-600 to-purple-800 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="text-6xl mb-4 group-hover:scale-110 transition-transform">🎰</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Casino Live</h3>
+                <p class="text-purple-100 text-sm mb-4">RTP: 98%</p>
+                <a href="https://88aa.com.co" class="bg-white text-purple-600 px-4 py-2 rounded-lg font-medium hover:bg-purple-50 transition-colors">
+                    Chơi Ngay
+                </a>
+            </div>
+            
+            <!-- Game 4: Thể Thao -->
+            <div class="group bg-gradient-to-br from-green-600 to-green-800 rounded-2xl p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div class="text-6xl mb-4 group-hover:scale-110 transition-transform">⚽</div>
+                <h3 class="text-2xl font-bold text-white mb-2">Thể Thao</h3>
+                <p class="text-green-100 text-sm mb-4">Odds: 0.85+</p>
+                <a href="https://88aa.com.co" class="bg-white text-green-600 px-4 py-2 rounded-lg font-medium hover:bg-green-50 transition-colors">
+                    Chơi Ngay
+                </a>
+            </div>
+        </div>
+        
+        <!-- View All Games Button -->
+        <div class="text-center mt-12">
+            <a href="https://88aa.com.co" class="bg-game-primary hover:bg-orange-600 text-white text-lg font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105">
+                Xem Tất Cả Trò Chơi
+            </a>
+        </div>
+    </div>
+</section>

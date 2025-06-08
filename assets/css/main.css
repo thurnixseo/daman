@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles cho game portal */
+@layer components {
+  .game-card {
+    @apply bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 p-6;
+  }
+  
+  .btn-primary {
+    @apply bg-game-primary hover:bg-orange-600 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+  
+  .btn-secondary {
+    @apply bg-game-secondary hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-lg transition-colors duration-300;
+  }
+}
+/* Thêm vào cuối file main.css */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

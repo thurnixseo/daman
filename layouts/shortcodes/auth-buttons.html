@@ -1,0 +1,42 @@
+{{ $showLogin := .Get "showLogin" | default "true" }}
+{{ $showRegister := .Get "showRegister" | default "true" }}
+{{ $loginText := .Get "loginText" | default (.Site.Params.auth.loginText | default "ĐĂNG NHẬP") }}
+{{ $registerText := .Get "registerText" | default (.Site.Params.auth.registerText | default "ĐĂNG KÝ") }}
+{{ $loginUrl := .Get "loginUrl" | default (.Site.Params.auth.loginUrl | default "/login/") }}
+{{ $registerUrl := .Get "registerUrl" | default (.Site.Params.auth.registerUrl | default "/register/") }}
+{{ $size := .Get "size" | default "md" }}
+{{ $layout := .Get "layout" | default "horizontal" }}
+
+{{ $sizeClasses := "" }}
+{{ if eq $size "sm" }}
+    {{ $sizeClasses = "px-3 py-2 text-sm" }}
+{{ else if eq $size "lg" }}
+    {{ $sizeClasses = "px-8 py-4 text-lg" }}
+{{ else }}
+    {{ $sizeClasses = "px-6 py-3 text-base" }}
+{{ end }}
+
+{{ $containerClasses := "" }}
+{{ if eq $layout "vertical" }}
+    {{ $containerClasses = "flex flex-col space-y-3" }}
+{{ else if eq $layout "stack" }}
+    {{ $containerClasses = "flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-3" }}
+{{ else }}
+    {{ $containerClasses = "flex space-x-3" }}
+{{ end }}
+
+<div class="{{ $containerClasses }} items-center justify-center">
+    {{ if eq $showLogin "true" }}
+        <a href="{{ $loginUrl }}" 
+           class="bg-game-primary hover:bg-orange-600 text-white rounded-lg transition-colors font-medium {{ $sizeClasses }} uppercase tracking-wide text-center">
+            {{ $loginText }}
+        </a>
+    {{ end }}
+    
+    {{ if eq $showRegister "true" }}
+        <a href="{{ $registerUrl }}" 
+           class="bg-transparent border-2 border-game-accent text-game-accent hover:bg-game-accent hover:text-white rounded-lg transition-colors font-medium {{ $sizeClasses }} uppercase tracking-wide text-center">
+            {{ $registerText }}
+        </a>
+    {{ end }}
+</div>

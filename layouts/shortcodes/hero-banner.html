@@ -1,0 +1,62 @@
+{{ $title := .Get "title" | default "Chào Mừng Đến Với 88AA" }}
+{{ $subtitle := .Get "subtitle" | default "Cổng Game Giải Trí Hàng Đầu Việt Nam" }}
+{{ $image := .Get "image" | default "/images/hero-bg.jpg" }}
+{{ $cta1Text := .Get "cta1Text" | default "ĐĂNG KÝ NGAY" }}
+{{ $cta1Link := .Get "cta1Link" | default "https://88aa.com.co" }}
+{{ $cta2Text := .Get "cta2Text" | default "VÀO GAME" }}
+{{ $cta2Link := .Get "cta2Link" | default "https://88aa.com.co" }}
+
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-game-secondary via-blue-900 to-purple-900">
+    <!-- Background Image -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image: url('{{ $image }}')"></div>
+    
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0">
+        <div class="floating-element absolute top-10 left-10 w-20 h-20 bg-game-accent/20 rounded-full animate-bounce"></div>
+        <div class="floating-element absolute top-32 right-20 w-16 h-16 bg-yellow-400/20 rounded-full animate-pulse"></div>
+        <div class="floating-element absolute bottom-20 left-32 w-24 h-24 bg-red-500/20 rounded-full animate-ping"></div>
+        <div class="floating-element absolute bottom-40 right-10 w-12 h-12 bg-green-400/20 rounded-full animate-bounce"></div>
+    </div>
+    
+    <!-- Content -->
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <!-- Main Title -->
+            <h1 class="text-6xl md:text-8xl font-bold text-white mb-6 animate-fadeInUp">
+                {{ $title }}
+            </h1>
+            
+            <!-- Subtitle -->
+            <p class="text-2xl md:text-3xl text-gray-200 mb-8 animate-fadeInUp animation-delay-300">
+                {{ $subtitle }}
+            </p>
+            
+            <!-- Stats -->
+            <div class="grid grid-cols-3 gap-8 mb-12 animate-fadeInUp animation-delay-600">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-game-accent mb-2">1000+</div>
+                    <div class="text-lg text-gray-300">Trò Chơi</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-game-accent mb-2">500K+</div>
+                    <div class="text-lg text-gray-300">Thành Viên</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-game-accent mb-2">24/7</div>
+                    <div class="text-lg text-gray-300">Hỗ Trợ</div>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col md:flex-row gap-6 justify-center animate-fadeInUp animation-delay-900">
+                <a href="{{ $cta1Link }}" class="bg-game-primary hover:bg-orange-600 text-white text-xl font-bold py-4 px-12 rounded-full transition-all duration-300 transform hover:scale-105 hover:shadow-2xl">
+                    {{ $cta1Text }}
+                </a>
+                <a href="{{ $cta2Link }}" class="bg-transparent border-2 border-game-accent text-game-accent hover:bg-game-accent hover:text-white text-xl font-bold py-4 px-12 rounded-full transition-all duration-300 transform hover:scale-105">
+                    {{ $cta2Text }}
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</section>

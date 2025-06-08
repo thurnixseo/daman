@@ -1,0 +1,79 @@
+{{ $section := .Get "section" }}
+{{ $limit := .Get "limit" | default "6" }}
+{{ $layout := .Get "layout" | default "grid" }}
+{{ $showDate := .Get "showDate" | default "true" }}
+{{ $showCategory := .Get "showCategory" | default "true" }}
+
+{{ $pages := slice }}
+{{ if $section }}
+    {{ $sectionPage := .Site.GetPage (printf "/%s" $section) }}
+    {{ if $sectionPage }}
+        {{ $pages = $sectionPage.Pages }}
+    {{ end }}
+{{ else }}
+    {{ $pages = .Site.RegularPages }}
+{{ end }}
+
+{{ $pages = first (int $limit) $pages }}
+
+{{ if eq $layout "list" }}
+    <!-- List Layout -->
+    <div class="space-y-4">
+        {{ range $pages }}
+            {{ $page := . }}
+            <article class="bg-gray-800 rounded-lg p-4 hover:bg-gray-700 transition-colors">
+                <div class="flex items-start space-x-4">
+                    {{ with $page.Params.image }}
+                        <img src="{{ . }}" alt="{{ $page.Title }}" class="w-20 h-20 object-cover rounded">
+                    {{ end }}
+                    <div class="flex-1">
+                        <h3 class="text-lg font-bold text-white hover:text-game-accent mb-2">
+                            <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+                        </h3>
+                        {{ if eq $showDate "true" }}
+                            <div class="text-sm text-gray-400 mb-2">{{ $page.Date.Format "02/01/2006" }}</div>
+                        {{ end }}
+                        <p class="text-gray-400 text-sm">{{ $page.Summary | truncate 100 }}</p>
+                    </div>
+                </div>
+            </article>
+        {{ end }}
+    </div>
+{{ else }}
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {{ range $pages }}
+            {{ $page := . }}
+            <article class="bg-gray-800 rounded-lg overflow-hidden hover:shadow-xl transition-shadow">
+                {{ with $page.Params.image }}
+                    <div class="relative">
+                        <img src="{{ . }}" alt="{{ $page.Title }}" class="w-full h-48 object-cover">
+                        {{ if $page.Params.featured }}
+                            <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-xs font-bold">
+                                🔥 HOT
+                            </div>
+                        {{ end }}
+                    </div>
+                {{ end }}
+                <div class="p-4">
+                    {{ if eq $showDate "true" }}
+                        <div class="flex items-center space-x-2 text-sm text-gray-400 mb-2">
+                            <span>{{ $page.Date.Format "02/01/2006" }}</span>
+                            {{ if and (eq $showCategory "true") $page.Params.categories }}
+                                <span>•</span>
+                                <span class="text-game-accent">{{ index $page.Params.categories 0 | title }}</span>
+                            {{ end }}
+                        </div>
+                    {{ end }}
+                    <h3 class="text-lg font-bold text-white mb-3 hover:text-game-accent">
+                        <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
+                    </h3>
+                    <p class="text-gray-400 text-sm mb-4">{{ $page.Summary | truncate 80 }}</p>
+                    <a href="{{ $page.Permalink }}" class="text-game-accent hover:text-white font-medium text-sm">
+                        Đọc tiếp →
+                    </a>
+                </div>
+            </article>
+        {{ end }}
+    </div>
+{{ end }}

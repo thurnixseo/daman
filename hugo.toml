@@ -1,0 +1,199 @@
+baseURL = 'https://88aa.com.co'  # Thay bằng domain thật của bạn
+languageCode = 'vi'
+title = 'Cổng game 88AA'
+defaultContentLanguage = 'vi'
+
+[build]
+  writeStats = true
+
+[params.auth]
+  showButtons = true          # Hiện/ẩn buttons
+  loginText = "ĐĂNG NHẬP"     # Text button đăng nhập  
+  loginUrl = "/dang-nhap-88aa/" # Link đăng nhập
+  registerText = "ĐĂNG KÝ"    # Text button đăng ký
+  registerUrl = "/dang-ky-88aa/" # Link đăng ký
+  loginStyle = "default"      # "default", "outline", "ghost"
+  registerStyle = "outline"   # "default", "outline", "ghost"
+  buttonSize = "md"          # "sm", "md", "lg"
+  mobileDisplay = "show"      # "show", "hide", "icons"
+  loginTarget = "_self"       # "_self", "_blank"
+  registerTarget = "_self"    # "_self", "_blank"
+
+[taxonomies]
+  category = 'categories'
+  tag_display = "tag_displays"
+  tag = 'tags'
+  game_type = 'game_types'
+  difficulty = 'difficulties'
+
+[permalinks]
+  tin-tuc = '/tin-tuc/:slug/'
+  huong-dan = '/huong-dan/:slug/'
+  tro-choi = '/tro-choi/:slug/'
+  khuyen-mai = '/khuyen-mai/:slug/'
+  tags = '/tag/:slug/'
+
+# Category Pages Configuration
+[params.categories]
+  [params.categories.tin_tuc]
+    title = "Tin Tức 88AA"
+    description = "Cập nhật tin tức mới nhất về game, sự kiện và khuyến mãi"
+    icon = "📰"
+    color = "bg-blue-600"
+    
+  [params.categories.huong_dan]
+    title = "Hướng Dẫn"
+    description = "Hướng dẫn chi tiết cách chơi game và sử dụng dịch vụ"
+    icon = "📖"
+    color = "bg-green-600"
+    
+  [params.categories.tro_choi]
+    title = "Trò Chơi"
+    description = "Khám phá các trò chơi hấp dẫn tại 88AA"
+    icon = "🎮"
+    color = "bg-purple-600"
+    
+  [params.categories.khuyen_mai]
+    title = "Khuyến Mãi"
+    description = "Các chương trình khuyến mãi hấp dẫn"
+    icon = "🎁"
+    color = "bg-red-600"
+
+[params]
+  description = 'Cổng game giải trí hàng đầu Việt Nam. Khám phá hàng nghìn trò chơi thú vị và kết nối với cộng đồng game thủ.'
+  author = 'Cổng game 88AA'
+  logo = '/images/88aa.webp'
+  favicon = '/images/88aa-favicon.png'
+  ogImage = '/images/88aa-og.webp'
+  
+  # Social Media
+  facebook = 'https://facebook.com/88aa'
+  twitter = 'https://twitter.com/88aa'
+  youtube = 'https://youtube.com/@88aa'
+  
+  # Gaming specific
+  totalGames = '1000+'
+  totalPlayers = '500K+'
+  totalPlays = '1M+'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# Menu Configuration
+[[menu.main]]
+  name = "TRANG CHỦ 88AA"
+  url = "https://88aa.com.co"
+  weight = 10
+  pre = "🏠"
+
+[[menu.main]]
+  name = "HƯỚNG DẪN"
+  url = "/huong-dan/"
+  weight = 20
+  pre = "📖"
+  identifier = "huong-dan"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "ĐĂNG KÝ 88AA"
+    url = "/dang-ky-88aa/"
+    weight = 21
+    pre = "📝"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "ĐĂNG NHẬP 88AA"
+    url = "/dang-nhap-88aa/"
+    weight = 22
+    pre = "🔑"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "NẠP TIỀN 88AA"
+    url = "/nap-tien-88aa/"
+    weight = 23
+    pre = "💰"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "RÚT TIỀN 88AA"
+    url = "/rut-tien-88aa/"
+    weight = 24
+    pre = "💸"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "TẢI APP 88AA"
+    url = "/tai-app-88aa/"
+    weight = 25
+    pre = "📱"
+
+  [[menu.main]]
+    parent = "huong-dan"
+    name = "LINK VÀO 88AA"
+    url = "/link-vao-88aa/"
+    weight = 26
+    pre = "🔗"
+
+[[menu.main]]
+  name = "TRÒ CHƠI 88AA"
+  url = "/tro-choi/"
+  weight = 30
+  pre = "🎮"
+  identifier = "tro-choi"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "XỔ SỐ 88AA"
+    url = "/xo-so-88aa/"
+    weight = 31
+    pre = "🎲"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "BẮN CÁ 88AA"
+    url = "/ban-ca-88aa/"
+    weight = 32
+    pre = "🐟"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "THỂ THAO 88AA"
+    url = "/the-thao-88aa/"
+    weight = 33
+    pre = "⚽"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "CASINO 88AA"
+    url = "/casino-88aa/"
+    weight = 34
+    pre = "🎰"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "GAME BÀI 88AA"
+    url = "/game-bai-88aa/"
+    weight = 35
+    pre = "🃏"
+
+  [[menu.main]]
+    parent = "tro-choi"
+    name = "NỔ HŨ 88AA"
+    url = "/no-hu-88aa/"
+    weight = 36
+    pre = "💥"
+
+[[menu.main]]
+  name = "KHUYẾN MÃI"
+  url = "/khuyen-mai/"
+  weight = 40
+  pre = "🎁"
+
+[[menu.main]]
+  name = "TIN TỨC"
+  url = "/tin-tuc/"
+  weight = 50
+  pre = "📰"

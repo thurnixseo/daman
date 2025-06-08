@@ -1,0 +1,22 @@
+{{ $current := .Get "current" }}
+{{ $categories := .Site.Data.categories }}
+
+<nav class="bg-gray-800 rounded-lg p-4 mb-8">
+    <div class="flex flex-wrap gap-3">
+        <a href="/categories/" 
+           class="px-4 py-2 rounded-lg transition-colors {{ if not $current }}bg-game-primary text-white{{ else }}bg-gray-700 text-gray-300 hover:bg-gray-600{{ end }}">
+            📂 Tất cả
+        </a>
+        
+        {{ range .Site.Sections }}
+            {{ if .Params.icon }}
+                <a href="{{ .Permalink }}" 
+                   class="px-4 py-2 rounded-lg transition-colors flex items-center space-x-2 {{ if eq .Section $current }}bg-game-primary text-white{{ else }}bg-gray-700 text-gray-300 hover:bg-gray-600{{ end }}">
+                    <span>{{ .Params.icon }}</span>
+                    <span>{{ .Title }}</span>
+                    <span class="text-xs bg-gray-600 px-2 py-1 rounded">{{ len .Pages }}</span>
+                </a>
+            {{ end }}
+        {{ end }}
+    </div>
+</nav>

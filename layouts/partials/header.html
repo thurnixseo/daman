@@ -1,0 +1,172 @@
+<header class="bg-gradient-to-r from-game-secondary via-blue-800 to-game-secondary shadow-2xl sticky top-0 z-[60] transition-all duration-300 ease-in-out">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-game-accent/10 to-transparent animate-pulse"></div>
+    </div>
+    
+    <nav class="container mx-auto px-2 sm:px-4 py-4 relative z-[70]">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center flex-shrink-0">
+                <a href="/" class="hover:opacity-80 transition-opacity">
+                    <img src="/images/88aa.webp" alt="88AA" class="h-10 w-auto">
+                </a>
+            </div>
+
+            <div class="hidden xl:flex items-center space-x-6 flex-shrink-0">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                        <div class="relative group">
+                            <a href="{{ .URL }}" class="text-white hover:text-game-accent transition-colors font-medium flex items-center space-x-1 text-sm uppercase tracking-wide py-2">
+                                {{ if .Pre }}<span>{{ .Pre }}</span>{{ end }}
+                                <span>{{ .Name }}</span>
+                                <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </a>
+                            <div class="absolute top-full left-0 mt-1 w-48 bg-gray-800 rounded-lg shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transform scale-95 group-hover:scale-100 transition-all duration-200 z-[99] border border-gray-700">
+                                <div class="py-2">
+                                    {{ range .Children }}
+                                        <a href="{{ .URL }}" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-700 transition-colors uppercase tracking-wide">
+                                            {{ if .Pre }}<span class="mr-2">{{ .Pre }}</span>{{ end }}
+                                            {{ .Name }}
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    {{ else }}
+                        <a href="{{ .URL }}" class="text-white hover:text-game-accent transition-colors font-medium flex items-center space-x-1 text-sm uppercase tracking-wide {{ if $currentPage.IsMenuCurrent "main" . }}text-game-accent{{ end }}">
+                            {{ if .Pre }}<span>{{ .Pre }}</span>{{ end }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+            <div class="hidden lg:flex xl:hidden items-center space-x-3 flex-shrink-0">
+                {{ range .Site.Menus.main }}
+                    {{ if not .HasChildren }}
+                        <a href="{{ .URL }}" class="text-white hover:text-game-accent transition-colors p-2 rounded-lg hover:bg-white/10" title="{{ .Name }}">
+                            {{ if .Pre }}<span class="text-lg">{{ .Pre }}</span>{{ end }}
+                        </a>
+                    {{ end }}
+                {{ end }}
+            </div>
+
+            <div class="flex items-center space-x-1 sm:space-x-3 flex-shrink-0">
+                {{ if and .Site.Params.auth (ne .Site.Params.auth.showButtons false) }}
+                    {{ $loginText := "ĐĂNG NHẬP" }}
+                    {{ $registerText := "ĐĂNG KÝ" }}
+                    {{ $loginUrl := "/dang-nhap-88aa/" }}
+                    {{ $registerUrl := "/dang-ky-88aa/" }}
+                    
+                    {{ with .Site.Params.auth.loginText }}{{ $loginText = . }}{{ end }}
+                    {{ with .Site.Params.auth.registerText }}{{ $registerText = . }}{{ end }}
+                    {{ with .Site.Params.auth.loginUrl }}{{ $loginUrl = . }}{{ end }}
+                    {{ with .Site.Params.auth.registerUrl }}{{ $registerUrl = . }}{{ end }}
+                    
+                    <a href="{{ $loginUrl }}" 
+                       class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
+                        {{ $loginText }}
+                    </a>
+                    
+                    <a href="{{ $registerUrl }}" 
+                       class="bg-transparent border border-game-accent text-game-accent hover:bg-game-accent hover:text-game-secondary px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
+                        {{ $registerText }}
+                    </a>
+                {{ else }}
+                    <a href="/dang-nhap-88aa/" 
+                       class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
+                        ĐĂNG NHẬP
+                    </a>
+                    <a href="/dang-ky-88aa/" 
+                       class="bg-transparent border border-game-accent text-game-accent hover:bg-game-accent hover:text-game-secondary px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
+                        ĐĂNG KÝ
+                    </a>
+                {{ end }}
+
+                <button class="lg:hidden text-white hover:text-game-accent transition-colors ml-2 p-1" id="mobile-menu-button" aria-label="Open menu">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="lg:hidden mt-3 hidden" id="mobile-menu">
+            <div class="bg-gray-800 rounded-lg p-4 space-y-3">
+                <div class="space-y-2">
+                    {{ range .Site.Menus.main }}
+                        {{ if .HasChildren }}
+                            <div class="space-y-1">
+                                <a href="{{ .URL }}" class="flex items-center space-x-2 text-white hover:text-game-accent transition-colors p-2 rounded uppercase tracking-wide font-medium">
+                                    {{ if .Pre }}<span>{{ .Pre }}</span>{{ end }}
+                                    <span class="text-sm">{{ .Name }}</span>
+                                </a>
+                                <div class="ml-6 space-y-1">
+                                    {{ range .Children }}
+                                        <a href="{{ .URL }}" class="block text-gray-300 hover:text-white transition-colors p-2 rounded text-sm uppercase tracking-wide">
+                                            {{ if .Pre }}<span class="mr-2">{{ .Pre }}</span>{{ end }}
+                                            {{ .Name }}
+                                        </a>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        {{ else }}
+                            <a href="{{ .URL }}" class="flex items-center space-x-2 text-white hover:text-game-accent transition-colors p-2 rounded uppercase tracking-wide font-medium">
+                                {{ if .Pre }}<span>{{ .Pre }}</span>{{ end }}
+                                <span class="text-sm">{{ .Name }}</span>
+                            </a>
+                        {{ end }}
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+    }
+
+    // Sticky header effect
+    const header = document.querySelector('header');
+    const headerInitialClass = header.className;
+    const headerInitialBg = header.style.background; // Lưu lại background ban đầu nếu có
+
+    function handleScroll() {
+        if (window.scrollY > 100) {
+            header.style.background = 'rgba(4, 78, 137, 0.95)';
+            header.style.backdropFilter = 'blur(10px)';
+            header.classList.add('shadow-lg');
+        } else {
+            header.style.background = headerInitialBg; // Khôi phục lại bg ban đầu
+            header.style.backdropFilter = 'none';
+            header.classList.remove('shadow-lg');
+        }
+    }
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
+});
+</script>
+
+<style>
+/* Remove overly complex styles and !important */
+/* The new approach uses Tailwind's group-hover utility, making custom CSS unnecessary */
+
+/* Force white for all headings if needed */
+main h1, main h2,
+article h1, article h2,
+.prose h1, .prose h2 {
+    color: #ffffff !important;
+}
+</style>

@@ -1,0 +1,27 @@
+<nav class="flex items-center space-x-2 text-sm text-gray-400 mb-6">
+    <a href="/" class="hover:text-white transition-colors">🏠 Trang chủ 88AA</a>
+    
+    {{ $sections := split .Page.RelPermalink "/" }}
+    {{ $url := "" }}
+    
+    {{ range $index, $section := $sections }}
+        {{ if and $section (ne $section "") }}
+            {{ $url = printf "%s/%s" $url $section }}
+            {{ $sectionPage := $.Site.GetPage $url }}
+            
+            <span>→</span>
+            
+            {{ if $sectionPage }}
+                {{ if eq $index (sub (len $sections) 2) }}
+                    <span class="text-white font-medium">{{ $sectionPage.Title }}</span>
+                {{ else }}
+                    <a href="{{ $sectionPage.Permalink }}" class="hover:text-white transition-colors">
+                        {{ $sectionPage.Title }}
+                    </a>
+                {{ end }}
+            {{ else }}
+                <span class="text-white font-medium">{{ $section | title }}</span>
+            {{ end }}
+        {{ end }}
+    {{ end }}
+</nav>

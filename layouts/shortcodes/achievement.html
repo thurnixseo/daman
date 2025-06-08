@@ -1,0 +1,19 @@
+{{ $title := .Get "title" }}
+{{ $description := .Get "description" }}
+{{ $icon := .Get "icon" | default "🏆" }}
+{{ $rarity := .Get "rarity" | default "common" }}
+
+{{ $badgeColor := "bg-gray-500" }}
+{{ if eq $rarity "rare" }}
+    {{ $badgeColor = "bg-blue-500" }}
+{{ else if eq $rarity "epic" }}
+    {{ $badgeColor = "bg-purple-500" }}
+{{ else if eq $rarity "legendary" }}
+    {{ $badgeColor = "bg-yellow-500" }}
+{{ end }}
+
+<div class="inline-block {{ $badgeColor }} text-white rounded-lg p-3 m-2 text-center min-w-32 hover:scale-105 transition-transform">
+    <div class="text-2xl mb-1">{{ $icon }}</div>
+    <div class="font-bold text-sm">{{ $title }}</div>
+    <div class="text-xs opacity-90">{{ $description }}</div>
+</div>

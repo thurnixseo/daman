@@ -1,0 +1,7 @@
+{{ $height := .Get "height" | default "h-8" }}
+{{ $class := .Get "class" | default "" }}
+
+<img src="/images/88aa.webp" 
+     alt="88AA" 
+     class="{{ $height }} w-auto {{ $class }}"
+     loading="lazy">

@@ -1,0 +1,38 @@
+{{ $username := .Get "username" | default "User" }}
+{{ $avatar := .Get "avatar" | default "/images/default-avatar.png" }}
+{{ $balance := .Get "balance" | default "0" }}
+
+<div class="relative group">
+    <button class="flex items-center space-x-2 bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded-lg transition-colors">
+        <img src="{{ $avatar }}" alt="{{ $username }}" class="w-8 h-8 rounded-full">
+        <div class="hidden md:block text-left">
+            <div class="text-white text-sm font-medium">{{ $username }}</div>
+            <div class="text-game-accent text-xs">{{ $balance }} Xu</div>
+        </div>
+        <svg class="w-4 h-4 text-gray-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+    </button>
+    
+    <!-- User Dropdown -->
+    <div class="absolute right-0 top-full mt-1 w-48 bg-gray-800 rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+        <div class="py-2">
+            <a href="/profile/" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+                👤 Thông tin cá nhân
+            </a>
+            <a href="/wallet/" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+                💰 Ví của tôi
+            </a>
+            <a href="/history/" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+                📊 Lịch sử giao dịch
+            </a>
+            <a href="/settings/" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-gray-700 transition-colors">
+                ⚙️ Cài đặt
+            </a>
+            <hr class="border-gray-600 my-2">
+            <a href="/logout/" class="block px-4 py-2 text-sm text-red-400 hover:text-red-300 hover:bg-gray-700 transition-colors">
+                🚪 Đăng xuất
+            </a>
+        </div>
+    </div>
+</div>

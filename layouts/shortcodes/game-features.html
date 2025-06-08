@@ -1,0 +1,18 @@
+{{ $features := .Get "features" | split "," }}
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+    {{ range $features }}
+        {{ $feature := split . "|" }}
+        {{ $icon := index $feature 0 }}
+        {{ $title := index $feature 1 }}
+        {{ $desc := index $feature 2 }}
+        
+        <div class="flex items-start space-x-3 bg-gray-50 rounded-lg p-4">
+            <div class="text-2xl">{{ $icon }}</div>
+            <div>
+                <h5 class="font-bold text-gray-800">{{ $title }}</h5>
+                <p class="text-gray-600 text-sm">{{ $desc }}</p>
+            </div>
+        </div>
+    {{ end }}
+</div>

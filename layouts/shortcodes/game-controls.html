@@ -1,0 +1,20 @@
+{{ $controls := .Get "controls" | split "," }}
+
+<div class="bg-game-secondary text-white rounded-lg p-6 mb-6">
+    <h4 class="text-lg font-bold mb-4 flex items-center">
+        <span class="mr-2">🎮</span>
+        Hướng dẫn điều khiển
+    </h4>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {{ range $controls }}
+            {{ $control := split . "|" }}
+            {{ $key := index $control 0 }}
+            {{ $action := index $control 1 }}
+            
+            <div class="flex items-center space-x-3">
+                <span class="bg-gray-800 px-3 py-1 rounded font-mono text-sm min-w-16 text-center">{{ $key }}</span>
+                <span class="text-gray-200">{{ $action }}</span>
+            </div>
+        {{ end }}
+    </div>
+</div>

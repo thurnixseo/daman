@@ -1,0 +1,63 @@
+{{ $showNumbers := .Get "showNumbers" | default "true" }}
+{{ $maxDepth := .Get "maxDepth" | default "3" }}
+
+{{ if .Page.TableOfContents }}
+    <div class="bg-gray-800 rounded-lg p-6 mb-8">
+        <h3 class="text-lg font-bold text-white mb-4 flex items-center">
+            📋 Mục lục
+        </h3>
+        <div class="toc-content text-gray-300">
+            {{ .Page.TableOfContents }}
+        </div>
+    </div>
+    
+    <style>
+    .toc-content nav > ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .toc-content ul {
+        margin: 0;
+        padding-left: 1rem;
+    }
+    
+    .toc-content li {
+        margin: 0.5rem 0;
+    }
+    
+    .toc-content a {
+        color: #d1d5db;
+        text-decoration: none;
+        display: block;
+        padding: 0.25rem 0;
+        border-radius: 0.375rem;
+        transition: all 0.3s;
+    }
+    
+    .toc-content a:hover {
+        color: #FF6B35;
+        background-color: rgba(75, 85, 99, 0.5);
+        padding-left: 0.5rem;
+    }
+    
+    {{ if eq $showNumbers "true" }}
+    .toc-content ol {
+        counter-reset: item;
+        padding-left: 0;
+    }
+    
+    .toc-content ol > li {
+        counter-increment: item;
+        margin: 0.5rem 0;
+    }
+    
+    .toc-content ol > li:before {
+        content: counter(item) ". ";
+        color: #FF6B35;
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+    {{ end }}
+    </style>
+{{ end }}

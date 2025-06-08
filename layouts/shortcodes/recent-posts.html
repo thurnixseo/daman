@@ -18,11 +18,21 @@
 
 <!-- CSS Override for Recent Posts -->
 <style>
-/* Force WHITE text for recent posts */
+/* Force WHITE text for recent posts but preserve accent colors */
 .recent-posts article p,
 .recent-posts .text-white,
 .bg-gray-800 p,
 .text-sm {
+    color: #ffffff !important;
+}
+
+/* Keep "Đọc tiếp" button accent color */
+.recent-posts .text-game-accent,
+.recent-posts a.text-game-accent {
+    color: #FF6B35 !important;
+}
+
+.recent-posts .text-game-accent:hover {
     color: #ffffff !important;
 }
 </style>
@@ -74,7 +84,7 @@
                     <h3 class="text-lg font-bold text-white mb-3 hover:text-game-accent">
                         <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
                     </h3>
-                    <p class="text-white text-sm mb-4" style="color: #ffffff !important;">{{ $page.Summary | truncate 80 }}</p>
+                    <p class="text-white text-sm mb-4">{{ $page.Summary | truncate 80 }}</p>
                     <a href="{{ $page.Permalink }}" class="text-game-accent hover:text-white font-medium text-sm">
                         Đọc tiếp →
                     </a>

@@ -7,7 +7,7 @@ tag_display: ["rút tiền 88aa", "thanh toán 88aa", "hướng dẫn rút tiề
 image: "/images/huong-dan-rut-tien-88aa.webp"
 description: "Hướng dẫn các bước rút tiền thắng cược từ tài khoản 88AA về tài khoản ngân hàng cá nhân một cách an toàn, nhanh chóng và hoàn toàn không mất phí."
 author: "Chuyên Gia 88AA"
-featured: true
+featured: false
 difficulty: "Tất cả"
 time_required: "4 phút đọc"
 draft: false

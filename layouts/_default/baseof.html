@@ -12,7 +12,18 @@
     <link rel="icon" type="image/png" href="/images/88aa-favicon.png">
     <link rel="shortcut icon" type="image/png" href="/images/88aa-favicon.png">
     <link rel="apple-touch-icon" href="/images/88aa-favicon.png">
-    
+ 
+       <!-- Breadcrumb luôn có -->
+    {{ partial "schemas/breadcrumb.html" . }}
+    {{ partial "schemas/website.html" . }}
+
+    <!-- Schemas động theo params -->
+    {{ if .Params.schemas }}
+        {{ range .Params.schemas }}
+            {{ partial (printf "schemas/%s.html" .) $ }}
+        {{ end }}
+    {{ end }}
+
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">

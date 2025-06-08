@@ -2,6 +2,9 @@
 title: "88AA - Cổng Game Giải Trí Hàng Đầu Việt Nam"
 description: "88AA là nhà cái uy tín số 1 Việt Nam với hơn 1000+ trò chơi đa dạng. Đăng ký 88AA ngay để nhận bonus 100% và trải nghiệm game bài, casino, xổ số online."
 type: "homepage"
+schemas:
+  - "organization"
+  - "local-business" 
 ---
 
 {{< hero-banner 
@@ -707,26 +710,4 @@ document.addEventListener('DOMContentLoaded', function() {
     animateJackpot();
     updateCurrentTime();
 });
-</script>
-
-<!-- Structured Data for SEO -->
-<script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "88AA",
-    "url": "https://88aa.com.co",
-    "logo": "https://88aa.com.co/images/88aa.webp",
-    "description": "88AA là nhà cái uy tín hàng đầu Việt Nam với hơn 1000+ trò chơi casino, bắn cá, xổ số online. Đăng ký ngay để nhận bonus 100%.",
-    "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+84989189989",
-        "contactType": "customer service",
-        "availableLanguage": ["Vietnamese"]
-    },
-    "sameAs": [
-        "https://www.facebook.com/88aa",
-        "https://www.youtube.com/88aa"
-    ]
-}
 </script>

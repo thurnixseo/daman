@@ -1,0 +1,196 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "{{ .Site.BaseURL }}#organization",
+  "name": "88AA",
+  "alternateName": ["88AA Casino", "Cổng Game 88AA"],
+  "legalName": "88AA Entertainment Group",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ .Site.BaseURL }}/images/88aa.webp",
+    "width": 500,
+    "height": 200
+  },
+  "image": [
+    "{{ .Site.BaseURL }}/images/88aa-cover.webp",
+    "{{ .Site.BaseURL }}/images/88aa-casino-lobby.webp",
+    "{{ .Site.BaseURL }}/images/88aa-live-games.webp"
+  ],
+  "description": "88AA - Cổng game casino online uy tín hàng đầu Việt Nam, cung cấp trải nghiệm giải trí đỉnh cao với hàng trăm trò chơi casino, tỷ lệ thắng cao, bảo mật tuyệt đối và dịch vụ khách hàng 24/7.",
+  "foundingDate": "2018",
+  "founder": {
+    "@type": "Person",
+    "name": "CEO 88AA",
+    "jobTitle": "CEO & Founder",
+    "@id": "{{ .Site.BaseURL }}#ceo"
+  },
+  "employee": [
+    {
+      "@type": "Person",
+      "name": "Nguyễn Văn Tuấn",
+      "jobTitle": "CEO & Founder"
+    },
+    {
+      "@type": "Person",
+      "name": "Thái Thị Huấn",
+      "jobTitle": "Chief Technology Officer"
+    },
+    {
+      "@type": "Person",
+      "name": "Lê Văn Hòa",
+      "jobTitle": "Head of Customer Service"
+    }
+  ],
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": "150"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "165 Hòa Bình",
+    "addressLocality": "Phú Thạnh",
+    "addressRegion": "Tân Phú, TP.HCM",
+    "postalCode": "700000",
+    "addressCountry": "VN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 10.7708986,
+    "longitude": 106.6296464
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+84989189989",
+      "contactType": "customer service",
+      "email": "cskh@88aa.com",
+      "availableLanguage": ["Vietnamese", "English"],
+      "areaServed": "VN",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      }
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+84989189989",
+      "contactType": "sales",
+      "email": "sales@88aa.com",
+      "availableLanguage": "Vietnamese"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+84989189989",
+      "contactType": "technical support",
+      "email": "support@88aa.com",
+      "availableLanguage": "Vietnamese"
+    }
+  ],
+  "sameAs": [
+    "https://www.facebook.com/88aa.casino",
+    "https://www.youtube.com/@88aa-casino",
+    "https://twitter.com/88aa_casino",
+    "https://t.me/88aa_official"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Dịch vụ Casino Online và Game",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Baccarat Online",
+          "description": "Trò chơi Baccarat trực tuyến với dealer thật, tỷ lệ thắng cao và nhiều bàn cược khác nhau"
+        },
+        "price": "20000",
+        "priceCurrency": "VND",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2024-01-01",
+        "priceValidUntil": "2025-12-31"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Slot Games",
+          "description": "Hàng trăm game slot với jackpot khủng, đồ họa đẹp mắt và tính năng bonus hấp dẫn"
+        },
+        "price": "1000",
+        "priceCurrency": "VND",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2024-01-01",
+        "priceValidUntil": "2025-12-31"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Live Casino",
+          "description": "Casino trực tiếp với dealer xinh đẹp, chuyên nghiệp, phát trực tiếp 24/7"
+        },
+        "price": "50000",
+        "priceCurrency": "VND",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2024-01-01",
+        "priceValidUntil": "2025-12-31"
+      }
+    ]
+  },
+  "knowsAbout": [
+    "Casino Online",
+    "Baccarat",
+    "Blackjack", 
+    "Roulette",
+    "Slot Games",
+    "Poker",
+    "Live Casino",
+    "Sports Betting",
+    "Game Mobile",
+    "Cryptocurrency Gaming"
+  ],
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "Vietnam"
+    },
+    {
+      "@type": "City",
+      "name": "Ho Chi Minh City"
+    },
+    {
+      "@type": "City", 
+      "name": "Hanoi"
+    }
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": 10.7708986,
+      "longitude": 106.6296464
+    },
+    "geoRadius": "1000000"
+  },
+  "award": [
+    "Best Online Casino Vietnam 2023",
+    "Most Trusted Gaming Platform 2022",
+    "Casino Innovation Award 2021"
+  ],
+  "slogan": "Cổng Game Uy Tín - Thắng Lớn Mỗi Ngày",
+  "parentOrganization": null,
+  "subOrganization": [],
+  "memberOf": {
+    "@type": "Organization",
+    "name": "International Gaming Association"
+  },
+  "owns": {
+    "@type": "WebSite",
+    "@id": "{{ .Site.BaseURL }}#website"
+  }
+}
+</script>

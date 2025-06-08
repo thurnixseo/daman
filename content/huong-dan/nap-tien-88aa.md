@@ -7,7 +7,7 @@ tag_display: ["nạp tiền 88aa", "gửi tiền 88aa", "hướng dẫn nạp ti
 image: "/images/huong-dan-nap-tien-88aa.webp"
 description: "Hướng dẫn các bước nạp tiền vào tài khoản 88AA qua nhiều phương thức an toàn như chuyển khoản ngân hàng, ví điện tử. Cập nhật mới nhất 2025."
 author: "Chuyên Gia 88AA"
-featured: true
+featured: false
 difficulty: "Tất cả"
 time_required: "5 phút đọc"
 draft: false

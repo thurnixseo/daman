@@ -23,7 +23,7 @@ Việc đăng nhập đúng cách không chỉ giúp bạn truy cập vào tài 
 <div class="highlight-box">
 💡 <strong>Mẹo An Toàn:</strong> Luôn đảm bảo bạn đang truy cập đúng trang chủ chính thức của 88AA để tránh các trang web giả mạo nhằm đánh cắp thông tin. Link chính thức: <strong>https://88aa.com.co</strong>
 </div>
-![Giao diện đăng nhập 88AA](/images/giao-dien-dang-nhap-88aa.webp)
+
 ## Các Bước Đăng Nhập 88AA Siêu Tốc
 
 Quy trình đăng nhập được thiết kế vô cùng đơn giản và quen thuộc, giúp người chơi có thể truy cập ngay lập tức.
@@ -31,6 +31,8 @@ Quy trình đăng nhập được thiết kế vô cùng đơn giản và quen t
 ### Bước 1: Truy Cập Trang Chủ Chính Thức Của 88AA
 
 Mở trình duyệt web trên máy tính hoặc điện thoại của bạn và truy cập vào đường link chính thức của nhà cái 88AA. Tại giao diện trang chủ, bạn sẽ dễ dàng nhìn thấy khu vực đăng nhập.
+
+![Giao diện đăng nhập 88AA](/images/giao-dien-dang-nhap-88aa.webp)
 
 ### Bước 2: Điền Thông Tin Tài Khoản
 

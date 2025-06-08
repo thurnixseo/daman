@@ -42,7 +42,7 @@
                             <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
                         </h3>
                         {{ if eq $showDate "true" }}
-                            <div class="text-sm text-gray-400 mb-2">{{ $page.Date.Format "02/01/2006" }}</div>
+                            <div class="text-sm text-white-400 mb-2">{{ $page.Date.Format "02/01/2006" }}</div>
                         {{ end }}
                         <p class="text-white text-sm" style="color: #ffffff !important;">{{ $page.Summary | truncate 100 }}</p>
                     </div>
@@ -68,7 +68,7 @@
                 {{ end }}
                 <div class="p-4">
                     {{ if eq $showDate "true" }}
-                        <div class="flex items-center space-x-2 text-sm text-gray-400 mb-2">
+                        <div class="flex items-center space-x-2 text-sm text-white-400 mb-2">
                             <span>{{ $page.Date.Format "02/01/2006" }}</span>
                         </div>
                     {{ end }}

@@ -1,4 +1,16 @@
 {{ define "main" }}
+<!-- Global CSS Override for Text Color -->
+<style>
+/* GLOBAL OVERRIDE - Force WHITE text on all article summaries */
+article p, 
+.group article p,
+.bg-gradient-to-br p,
+article .text-white,
+.backdrop-blur-sm article p {
+    color: #ffffff !important;
+}
+</style>
+
 <!-- Background with gradient -->
 <div class="min-h-screen bg-gradient-to-br from-game-secondary via-blue-900 to-slate-900">
     <div class="container mx-auto px-4 py-12">
@@ -133,7 +145,7 @@
                             </h2>
                             
                             <!-- Summary -->
-                            <p class="text-gray-200 mb-4 leading-relaxed text-base">{{ .Summary | truncate 150 }}</p>
+                            <p style="color: #ffffff !important;" class="mb-4 leading-relaxed text-base">{{ .Summary | truncate 150 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
@@ -223,7 +235,7 @@
                             </h2>
                             
                             <!-- Summary -->
-                            <p class="text-gray-200 mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
+                            <p style="color: #ffffff !important;" class="mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">

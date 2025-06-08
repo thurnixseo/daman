@@ -1,15 +1,4 @@
 {{ define "main" }}
-
-<style>
-article p, 
-.group article p,
-.bg-gradient-to-br p,
-.backdrop-blur-sm article p,
-.prose p {
-    color: #ffffff !important;
-}
-</style>
-
 <!-- Background with gradient -->
 <div class="min-h-screen bg-gradient-to-br from-game-secondary via-blue-900 to-slate-900">
     <!-- Hero Section -->
@@ -200,7 +189,7 @@ article p,
                         {{ end }}
                         <div class="p-4">
                             <h4 class="text-white font-medium group-hover:text-game-accent transition-colors mb-2">{{ .Title }}</h4>
-                            <p style="color: #ffffff !important;" class="text-sm">{{ .Summary | truncate 80 }}</p>
+                            <p class="text-gray-200 text-sm">{{ .Summary | truncate 80 }}</p>
                         </div>
                     </a>
                     {{ end }}
@@ -269,7 +258,7 @@ article p,
 }
 
 .prose p {
-    color: #ffffff;
+    color: #d1d5db;
     line-height: 1.75;
     margin-bottom: 1.5rem;
 }
@@ -285,7 +274,7 @@ article p,
 }
 
 .prose ul, .prose ol {
-    color: #e5e7eb;
+    color: #d1d5db;
     margin-bottom: 1.5rem;
 }
 
@@ -382,7 +371,7 @@ article p,
 }
 
 .prose td {
-    color: #e5e7eb;
+    color: #d1d5db;
     padding: 1rem;
     border-bottom: 1px solid rgba(75, 85, 99, 0.3);
 }
@@ -531,25 +520,6 @@ html {
 .copy-button:hover {
     background: #FF6B35;
     color: white;
-}
-
-/* Force WHITE text color for all elements - STRONG OVERRIDE */
-.bg-gray-800 p, 
-.bg-gray-800 .text-gray-200, 
-.bg-gray-800 .text-white p,
-article p,
-.prose p,
-.group .text-gray-200,
-.backdrop-blur-sm p {
-    color: #ffffff !important;
-    opacity: 1 !important;
-}
-
-/* Ensure related posts text is visible */
-.group .text-gray-200,
-.group article p,
-.bg-gradient-to-br .group p {
-    color: #ffffff !important;
 }
 </style>
 

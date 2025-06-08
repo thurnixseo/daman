@@ -16,6 +16,17 @@
 
 {{ $pages = first (int $limit) $pages }}
 
+<!-- CSS Override for Recent Posts -->
+<style>
+/* Force WHITE text for recent posts summaries */
+.recent-posts article p,
+.recent-posts .text-gray-400,
+.bg-gray-800 p {
+    color: #ffffff !important;
+}
+</style>
+
+<div class="recent-posts">
 {{ if eq $layout "list" }}
     <!-- List Layout -->
     <div class="space-y-4">
@@ -33,7 +44,7 @@
                         {{ if eq $showDate "true" }}
                             <div class="text-sm text-gray-400 mb-2">{{ $page.Date.Format "02/01/2006" }}</div>
                         {{ end }}
-                        <p class="text-gray-400 text-sm">{{ $page.Summary | truncate 100 }}</p>
+                        <p class="text-white text-sm" style="color: #ffffff !important;">{{ $page.Summary | truncate 100 }}</p>
                     </div>
                 </div>
             </article>
@@ -59,16 +70,21 @@
                     {{ if eq $showDate "true" }}
                         <div class="flex items-center space-x-2 text-sm text-gray-400 mb-2">
                             <span>{{ $page.Date.Format "02/01/2006" }}</span>
-                            {{ if and (eq $showCategory "true") $page.Params.categories }}
+                            {{ if and (eq $showCategory "true") $page.Section }}
                                 <span>•</span>
-                                <span class="text-game-accent">{{ index $page.Params.categories 0 | title }}</span>
+                                {{ $sectionPage := $.Site.GetPage (printf "/%s" $page.Section) }}
+                                {{ if $sectionPage }}
+                                    <span class="text-game-accent">{{ $sectionPage.Title }}</span>
+                                {{ else }}
+                                    <span class="text-game-accent">{{ $page.Section | title }}</span>
+                                {{ end }}
                             {{ end }}
                         </div>
                     {{ end }}
                     <h3 class="text-lg font-bold text-white mb-3 hover:text-game-accent">
                         <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>
                     </h3>
-                    <p class="text-gray-400 text-sm mb-4">{{ $page.Summary | truncate 80 }}</p>
+                    <p class="text-white text-sm mb-4" style="color: #ffffff !important;">{{ $page.Summary | truncate 80 }}</p>
                     <a href="{{ $page.Permalink }}" class="text-game-accent hover:text-white font-medium text-sm">
                         Đọc tiếp →
                     </a>
@@ -77,3 +93,4 @@
         {{ end }}
     </div>
 {{ end }}
+</div>

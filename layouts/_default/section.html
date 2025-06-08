@@ -1,11 +1,56 @@
 {{ define "main" }}
-<!-- Global CSS Override for Text Color -->
 <style>
-/* GLOBAL OVERRIDE - Force WHITE text on all article summaries */
 article p, 
 .group article p,
 .bg-gradient-to-br p,
 article .text-white,
+.backdrop-blur-sm article p,
+.text-white.mb-4,
+p.mb-4,
+.leading-relaxed,
+.text-base {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Target specific summary paragraphs */
+article p.mb-4.leading-relaxed.text-base,
+.group .bg-gradient-to-br article p.mb-4,
+.backdrop-blur-sm article p.mb-4 {
+    color: #ffffff !important;
+}
+
+/* Override any dark text classes */
+.text-gray-700,
+.text-gray-800,
+.text-gray-900,
+.text-black {
+    color: #ffffff !important;
+}
+
+/* NUCLEAR OPTION - Force WHITE text for ALL paragraphs in articles */
+article p, 
+.bg-gradient-to-br article p,
+article .text-white,
+article p.text-white,
+.bg-gradient-to-br p,
+.group article p,
+div.p-6 p,
+.backdrop-blur-sm p {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+/* Override ANY possible dark text */
+article p[class*="text-gray"],
+article p[class*="text-black"],
+.group article p[class*="text-gray"] {
+    color: #ffffff !important;
+}
+
+/* Specific targeting for summary paragraphs */
+article p[class*="text-"],
+.group .bg-gradient-to-br p,
 .backdrop-blur-sm article p {
     color: #ffffff !important;
 }
@@ -145,7 +190,7 @@ article .text-white,
                             </h2>
                             
                             <!-- Summary -->
-                            <p style="color: #ffffff !important;" class="mb-4 leading-relaxed text-base">{{ .Summary | truncate 150 }}</p>
+                            <p class="text-white mb-4 leading-relaxed text-base" style="color: #ffffff !important;">{{ .Summary | truncate 150 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
@@ -235,7 +280,7 @@ article .text-white,
                             </h2>
                             
                             <!-- Summary -->
-                            <p style="color: #ffffff !important;" class="mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
+                            <p class="text-white mb-4 leading-relaxed text-base" style="color: #ffffff !important;">{{ .Summary | truncate 120 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
@@ -371,23 +416,13 @@ html {
     background: #FF6B35;
 }
 
-/* Ensure proper contrast for article summaries */
-article p {
-    color: #e5e7eb !important; /* text-gray-200 */
-}
-
-/* Force proper text color for summaries in articles */
-.bg-gradient-to-br article p {
-    color: #e5e7eb !important;
-}
-
-/* Remove any conflicting white text overrides */
-article p.text-white {
-    color: #e5e7eb !important;
-}
-
-article .text-white p {
-    color: #e5e7eb !important;
+/* FINAL OVERRIDE - Ensure white text in summaries */
+article p,
+.group article p,
+article .text-white,
+.backdrop-blur-sm article p {
+    color: #ffffff !important;
+    opacity: 1 !important;
 }
 </style>
 {{ end }}

@@ -258,7 +258,7 @@
 }
 
 .prose p {
-    color: #d1d5db;
+    color: #e5e7eb;
     line-height: 1.75;
     margin-bottom: 1.5rem;
 }
@@ -274,7 +274,7 @@
 }
 
 .prose ul, .prose ol {
-    color: #d1d5db;
+    color: #e5e7eb;
     margin-bottom: 1.5rem;
 }
 
@@ -371,7 +371,7 @@
 }
 
 .prose td {
-    color: #d1d5db;
+    color: #e5e7eb;
     padding: 1rem;
     border-bottom: 1px solid rgba(75, 85, 99, 0.3);
 }
@@ -520,6 +520,16 @@ html {
 .copy-button:hover {
     background: #FF6B35;
     color: white;
+}
+
+/* Force proper text color for all elements */
+.bg-gray-800 p, .bg-gray-800 .text-gray-200, .bg-gray-800 .text-white p {
+    color: #e5e7eb !important;
+}
+
+/* Ensure related posts text is visible */
+.group .text-gray-200 {
+    color: #e5e7eb !important;
 }
 </style>
 

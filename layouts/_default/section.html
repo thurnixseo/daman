@@ -133,7 +133,7 @@
                             </h2>
                             
                             <!-- Summary -->
-                            <p class="text-white mb-4 leading-relaxed text-base">{{ .Summary | truncate 150 }}</p>
+                            <p class="text-gray-200 mb-4 leading-relaxed text-base">{{ .Summary | truncate 150 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
@@ -223,7 +223,7 @@
                             </h2>
                             
                             <!-- Summary -->
-                            <p class="text-white mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
+                            <p class="text-gray-200 mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
@@ -359,15 +359,23 @@ html {
     background: #FF6B35;
 }
 
-/* Force white text for article summaries */
-article p.text-white {
-    color: #ffffff !important;
-    opacity: 0.9;
+/* Ensure proper contrast for article summaries */
+article p {
+    color: #e5e7eb !important; /* text-gray-200 */
 }
 
-/* Ensure proper contrast */
-.bg-gradient-to-br p {
-    color: #ffffff !important;
+/* Force proper text color for summaries in articles */
+.bg-gradient-to-br article p {
+    color: #e5e7eb !important;
+}
+
+/* Remove any conflicting white text overrides */
+article p.text-white {
+    color: #e5e7eb !important;
+}
+
+article .text-white p {
+    color: #e5e7eb !important;
 }
 </style>
 {{ end }}

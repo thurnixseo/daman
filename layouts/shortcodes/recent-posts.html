@@ -70,15 +70,6 @@
                     {{ if eq $showDate "true" }}
                         <div class="flex items-center space-x-2 text-sm text-gray-400 mb-2">
                             <span>{{ $page.Date.Format "02/01/2006" }}</span>
-                            {{ if and (eq $showCategory "true") $page.Section }}
-                                <span>•</span>
-                                {{ $sectionPage := $.Site.GetPage (printf "/%s" $page.Section) }}
-                                {{ if $sectionPage }}
-                                    <span class="text-game-accent">{{ $sectionPage.Title }}</span>
-                                {{ else }}
-                                    <span class="text-game-accent">{{ $page.Section | title }}</span>
-                                {{ end }}
-                            {{ end }}
                         </div>
                     {{ end }}
                     <h3 class="text-lg font-bold text-white mb-3 hover:text-game-accent">

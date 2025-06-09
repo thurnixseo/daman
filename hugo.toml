@@ -9,9 +9,9 @@ defaultContentLanguage = 'en'
 [params.auth]
   showButtons = true          # Hiện/ẩn buttons
   loginText = "DAMAN GAME LOGIN"     # Text button đăng nhập  
-  loginUrl = "/#/" # Link đăng nhập
+  loginUrl = "https://damanclub.in/#/register?invitationCode=2488315945508" # Link đăng nhập
   registerText = "DAMAN GAME REGISTER"    # Text button đăng ký
-  registerUrl = "#" # Link đăng ký
+  registerUrl = "https://damanclub.in/#/register?invitationCode=2488315945508" # Link đăng ký
   loginStyle = "default"      # "default", "outline", "ghost"
   registerStyle = "default"   # "default", "outline", "ghost"
   buttonSize = "md"          # "sm", "md", "lg"

@@ -25,7 +25,7 @@ url: "/register-daman-games/"
 
 ## Why Choose Daman Games?
 
-[**Daman Games**](https://daman-game.world) has become India's most trusted online gaming platform, offering an incredible variety of games and unmatched security. Here's why millions of players choose us:
+[**Daman Games**](https://daman-game.world "Daman Game") has become India's most trusted online gaming platform, offering an incredible variety of games and unmatched security. Here's why millions of players choose us:
 
 ### 🎮 1000+ Games Available
 Massive game library featuring lottery, fishing games, casino, and sports betting with something for every player.

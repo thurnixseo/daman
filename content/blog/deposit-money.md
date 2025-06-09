@@ -7,7 +7,7 @@ tag_display: ["daman games deposit", "daman deposit money", "daman payment metho
 image: "/images/daman-games-deposit-guide.webp"
 description: "Complete guide to deposit money in Daman Games 2025. Secure payment methods, instant deposits via UPI, net banking, cards with step-by-step instructions and bonus offers."
 author: "Daman Games Expert"
-featured: true
+featured: false
 difficulty: "All Levels"
 time_required: "4 minutes read"
 draft: false

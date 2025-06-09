@@ -4,13 +4,13 @@
 {{ $rating := .Get "rating" | default "5" }}
 {{ $category := .Get "category" }}
 {{ $link := .Get "link" }}
-{{ $difficulty := .Get "difficulty" | default "Dễ" }}
+{{ $difficulty := .Get "difficulty" | default "Easy" }}
 
 <div class="game-card group cursor-pointer transform hover:scale-105 transition-all duration-300">
     <div class="relative overflow-hidden rounded-t-lg">
         <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
         <div class="absolute top-3 right-3">
-            <span class="bg-{{ if eq $difficulty "Dễ" }}green{{ else if eq $difficulty "Trung bình" }}yellow{{ else }}red{{ end }}-500 text-white px-2 py-1 rounded-full text-xs font-bold">
+            <span class="bg-{{ if eq $difficulty "Easy" }}green{{ else if eq $difficulty "Medium" }}yellow{{ else }}red{{ end }}-500 text-white px-2 py-1 rounded-full text-xs font-bold">
                 {{ $difficulty }}
             </span>
         </div>
@@ -41,7 +41,7 @@
         </div>
         
         <a href="{{ $link }}" class="btn-primary w-full text-center block hover:shadow-lg">
-            🎮 Chơi ngay
+            🎮 Play Now
         </a>
     </div>
 </div>

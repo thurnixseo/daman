@@ -9,9 +9,9 @@
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="/images/88aa-favicon.png">
-    <link rel="shortcut icon" type="image/png" href="/images/88aa-favicon.png">
-    <link rel="apple-touch-icon" href="/images/88aa-favicon.png">
+    <link rel="icon" type="image/png" href="/images/daman-games-favicon.png">
+    <link rel="shortcut icon" type="image/png" href="/images/daman-games-favicon.png">
+    <link rel="apple-touch-icon" href="/images/daman-games-favicon.png">
  
        <!-- Breadcrumb luôn có -->
     {{ partial "schemas/breadcrumb.html" . }}
@@ -27,7 +27,7 @@
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta property="og:image" content="{{ .Site.BaseURL }}images/88aa-og.webp">
+    <meta property="og:image" content="{{ .Site.BaseURL }}images/daman-games-og.webp">
     <meta property="og:url" content="{{ .Permalink }}">
     <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
     <meta property="og:site_name" content="{{ .Site.Title }}">
@@ -36,7 +36,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
     <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/88aa-og.webp">
+    <meta name="twitter:image" content="{{ .Site.BaseURL }}images/daman-games-og.webp">
     
     <!-- Additional Meta Tags -->
     <meta name="author" content="{{ .Site.Title }}">
@@ -46,23 +46,6 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ .Permalink }}">
     
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "{{ .Site.Title }}",
-        "url": "{{ .Site.BaseURL }}",
-        "description": "{{ .Site.Params.description }}",
-        "logo": "{{ .Site.BaseURL }}images/logo.webp",
-        "image": "{{ .Site.BaseURL }}images/88aa-og.webp",
-        "potentialAction": {
-            "@type": "SearchAction",
-            "target": "{{ .Site.BaseURL }}search?q={search_term_string}",
-            "query-input": "required name=search_term_string"
-        }
-    }
-    </script>
     
     <!-- CSS -->
     {{ $css := resources.Get "css/main.css" }}

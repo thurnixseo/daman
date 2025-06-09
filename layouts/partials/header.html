@@ -8,7 +8,7 @@
         <div class="flex justify-between items-center">
             <div class="flex items-center flex-shrink-0">
                 <a href="/" class="hover:opacity-80 transition-opacity">
-                    <img src="/images/88aa.webp" alt="88AA" class="h-10 w-auto">
+                    <img src="/images/daman-games.webp" alt="88AA" class="h-12 w-auto">
                 </a>
             </div>
 
@@ -56,10 +56,10 @@
 
             <div class="flex items-center space-x-1 sm:space-x-3 flex-shrink-0">
                 {{ if and .Site.Params.auth (ne .Site.Params.auth.showButtons false) }}
-                    {{ $loginText := "ĐĂNG NHẬP" }}
-                    {{ $registerText := "ĐĂNG KÝ" }}
-                    {{ $loginUrl := "/dang-nhap-88aa/" }}
-                    {{ $registerUrl := "/dang-ky-88aa/" }}
+                    {{ $loginText := "LOGIN" }}
+                    {{ $registerText := "REGISTER" }}
+                    {{ $loginUrl := "#" }}
+                    {{ $registerUrl := "#" }}
                     
                     {{ with .Site.Params.auth.loginText }}{{ $loginText = . }}{{ end }}
                     {{ with .Site.Params.auth.registerText }}{{ $registerText = . }}{{ end }}
@@ -76,11 +76,11 @@
                         {{ $registerText }}
                     </a>
                 {{ else }}
-                    <a href="/dang-nhap-88aa/" 
+                    <a href="/#/" 
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         ĐĂNG NHẬP
                     </a>
-                    <a href="/dang-ky-88aa/" 
+                    <a href="/#/" 
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         ĐĂNG KÝ
                     </a>

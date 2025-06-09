@@ -1,7 +1,7 @@
 {{ $showLogin := .Get "showLogin" | default "true" }}
 {{ $showRegister := .Get "showRegister" | default "true" }}
-{{ $loginText := .Get "loginText" | default (.Site.Params.auth.loginText | default "ĐĂNG NHẬP") }}
-{{ $registerText := .Get "registerText" | default (.Site.Params.auth.registerText | default "ĐĂNG KÝ") }}
+{{ $loginText := .Get "loginText" | default (.Site.Params.auth.loginText | default "LOGIN") }}
+{{ $registerText := .Get "registerText" | default (.Site.Params.auth.registerText | default "REGISTER") }}
 {{ $loginUrl := .Get "loginUrl" | default (.Site.Params.auth.loginUrl | default "/login/") }}
 {{ $registerUrl := .Get "registerUrl" | default (.Site.Params.auth.registerUrl | default "/register/") }}
 {{ $size := .Get "size" | default "md" }}

@@ -20,7 +20,7 @@
                     <div class="max-w-4xl">
                         <!-- Breadcrumb -->
                         <nav class="flex items-center space-x-2 text-sm text-gray-300 mb-6">
-                            <a href="/" class="hover:text-white transition-colors">🏠 Trang chủ</a>
+                            <a href="/" class="hover:text-white transition-colors">🏠 Daman Games Homepage</a>
                             <span>→</span>
                             {{ with .Section }}
                                 {{ $section := $.Site.GetPage (printf "/%s" .) }}
@@ -86,7 +86,7 @@
             {{ if .TableOfContents }}
             <div class="bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 mb-8 border border-gray-700/50">
                 <h3 class="text-xl font-bold text-white mb-4 flex items-center">
-                    📋 Mục lục
+                    📋 Table Of Content
                 </h3>
                 <div class="toc-content text-gray-300">
                     {{ .TableOfContents }}
@@ -116,7 +116,7 @@
 
             <!-- Share Buttons -->
             <div class="mt-8 p-6 bg-gray-800/80 backdrop-blur-sm rounded-2xl border border-gray-700/50">
-                <h3 class="text-lg font-bold text-white mb-4">📤 Chia sẻ</h3>
+                <h3 class="text-lg font-bold text-white mb-4">📤 Share</h3>
                 <div class="flex space-x-4">
                     <a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" 
                        target="_blank" 
@@ -150,7 +150,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                         </svg>
                         <div>
-                            <div class="text-sm text-gray-400">Bài trước</div>
+                            <div class="text-sm text-gray-400">Previous post</div>
                             <div class="text-white group-hover:text-game-accent transition-colors font-medium">{{ .Title }}</div>
                         </div>
                     </div>
@@ -161,7 +161,7 @@
                 <a href="{{ .Permalink }}" class="group bg-gray-800/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-game-accent transition-colors text-right">
                     <div class="flex items-center justify-end space-x-3">
                         <div>
-                            <div class="text-sm text-gray-400">Bài sau</div>
+                            <div class="text-sm text-gray-400">Next post</div>
                             <div class="text-white group-hover:text-game-accent transition-colors font-medium">{{ .Title }}</div>
                         </div>
                         <svg class="w-6 h-6 text-game-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,7 +176,7 @@
             {{ $related := .Site.RegularPages.Related . | first 3 }}
             {{ if $related }}
             <div class="mt-12">
-                <h3 class="text-2xl font-bold text-white mb-8">📚 Bài viết liên quan</h3>
+                <h3 class="text-2xl font-bold text-white mb-8">📚 Related Post</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {{ range $related }}
                     <a href="{{ .Permalink }}" class="group bg-gray-800/80 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700/50 hover:border-game-accent transition-all transform hover:-translate-y-2">

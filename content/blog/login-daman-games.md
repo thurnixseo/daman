@@ -11,7 +11,7 @@ featured: false
 difficulty: "All Levels"
 time_required: "3 minutes read"
 draft: false
-url: "/daman-games-login/"
+url: "/login-daman-games/"
 ---
 
 **Login to Daman Games Instantly**

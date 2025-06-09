@@ -6,6 +6,7 @@ schemas:
   - "organization"
   - "local-business"
   - "faqhome"
+  - "mobileapp"
 ---
 
 {{< hero-banner 

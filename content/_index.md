@@ -67,7 +67,7 @@ schemas:
     <div>
       <h3 class="text-3xl font-bold text-white mb-6">Advanced Gaming Technology</h3>
       <p class="text-lg text-gray-200 leading-relaxed mb-6">
-        <strong>Daman Games</strong> applies the latest technology to ensure smooth and stable gaming experience. Our platform is optimized for all devices from mobile phones, tablets to computers, allowing players to enjoy <strong>Daman Game</strong> anytime, anywhere.
+        <strong>Daman Games</strong> applies the latest technology to ensure smooth and stable gaming experience. Our platform is optimized for all devices from mobile phones, tablets to computers, allowing players to enjoy <a href="https://daman-game.world" title="Daman games"><strong>Daman Game</strong></a> anytime, anywhere.
       </p>
       <div class="space-y-4">
         <div class="flex items-center space-x-3">

@@ -18,7 +18,7 @@ url: "/register-daman-games/"
 ## India's Premier Gaming Platform - Get Started in Minutes
 
 **Ready to join millions of players?** Daman Games offers the most exciting gaming experience in India with instant rewards and secure gameplay.
-
+![Daman Games Registration Guide 2025](/images/daman-games-hero-banner.webp)
 [**REGISTER NOW**](https://daman-game.world) | [**PLAY GAMES**](https://daman-game.world)
 
 ---
@@ -45,7 +45,6 @@ Professional support team available around the clock via chat, phone, and WhatsA
 ### 🎁 Daily Bonuses & Rewards
 Welcome bonus, daily check-ins, cashback offers, and VIP rewards with prizes worth crores.
 
-![Daman Games Registration Guide 2025](/images/daman-games-hero-banner.webp)
 ---
 
 ## Quick Registration Overview

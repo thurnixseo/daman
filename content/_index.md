@@ -4,6 +4,7 @@ description: "Daman Games - Experience premium gaming with thousands of exciting
 type: "homepage"
 schemas:
   - "organization"
+  - "local-business"
   - "faqhome"
   - "mobileapp"
 ---

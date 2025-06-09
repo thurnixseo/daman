@@ -1,3 +1,4 @@
+<!-- mobile-application.html -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -7,7 +8,6 @@
   "alternateName": "Daman Game App",
   "url": "{{ .Site.BaseURL }}",
   "downloadUrl": "{{ .Site.BaseURL }}/download",
-  "installUrl": "{{ .Site.BaseURL }}/download",
   "applicationCategory": "GameApplication",
   "operatingSystem": ["Android", "iOS"],
   "description": "Daman Games mobile app - Premier gaming entertainment platform in India offering color prediction games, lottery, casino, and sports betting with secure transactions and 24/7 support.",
@@ -17,11 +17,6 @@
     "@id": "{{ .Site.BaseURL }}#organization"
   },
   "publisher": {
-    "@type": "Organization",
-    "name": "Daman Games",
-    "@id": "{{ .Site.BaseURL }}#organization"
-  },
-  "creator": {
     "@type": "Organization",
     "name": "Daman Games",
     "@id": "{{ .Site.BaseURL }}#organization"
@@ -141,62 +136,7 @@
       "datePublished": "2024-03-05"
     }
   ],
-  "mainEntity": {
-    "@type": "Organization",
-    "@id": "{{ .Site.BaseURL }}#organization"
-  },
   "isAccessibleForFree": true,
-  "hasPart": [
-    {
-      "@type": "SoftwareApplication",
-      "name": "Color Prediction Module",
-      "applicationCategory": "Game"
-    },
-    {
-      "@type": "SoftwareApplication", 
-      "name": "Lottery Module",
-      "applicationCategory": "Game"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Casino Module", 
-      "applicationCategory": "Game"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "Sports Betting Module",
-      "applicationCategory": "Game"
-    }
-  ],
-  "installUrl": [
-    {
-      "@type": "EntryPoint",
-      "urlTemplate": "{{ .Site.BaseURL }}/download/android",
-      "actionPlatform": "http://schema.org/AndroidPlatform"
-    },
-    {
-      "@type": "EntryPoint", 
-      "urlTemplate": "{{ .Site.BaseURL }}/download/ios",
-      "actionPlatform": "http://schema.org/IOSPlatform"
-    }
-  ],
-  "supportingData": {
-    "@type": "DataDownload",
-    "name": "App Analytics Data",
-    "description": "Performance and usage statistics"
-  },
-  "about": [
-    {
-      "@type": "Thing",
-      "name": "Color Prediction Games",
-      "description": "Fast-paced prediction games with instant results"
-    },
-    {
-      "@type": "Thing",
-      "name": "Mobile Gaming",
-      "description": "Optimized mobile gaming experience for Indian users"
-    }
-  ],
   "audience": {
     "@type": "Audience",
     "audienceType": "Mobile Gaming Enthusiasts",
@@ -205,6 +145,124 @@
       "name": "India"
     },
     "requiredMinAge": 18
+  }
+}
+</script>
+
+<!-- Updated local-business.html with correct schema structure -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "{{ .Site.BaseURL }}#localbusiness",
+  "name": "Daman Games - Premier Gaming Entertainment Platform in India",
+  "image": [
+    "{{ .Site.BaseURL }}images/daman-games-hall.webp",
+    "{{ .Site.BaseURL }}images/daman-games-platform.webp",
+    "{{ .Site.BaseURL }}images/daman-games-promotions.webp"
+  ],
+  "telephone": "+91 93270 00520",
+  "email": "support@daman-game.world",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ .Site.BaseURL }}images/daman-games-logo.webp",
+    "width": 500,
+    "height": 200
+  },
+  "description": "Daman Games - Premier gaming entertainment platform in India offering color prediction games, lottery, casino, and sports betting with secure transactions and 24/7 support.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Makarba",
+    "addressLocality": "Ahmedabad",
+    "addressRegion": "Gujarat",
+    "postalCode": "380051",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 22.997534,
+    "longitude": 72.4986038
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday", 
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    }
+  ],
+  "priceRange": "₹₹-₹₹₹",
+  "paymentAccepted": ["UPI", "Net Banking", "Credit Card", "Debit Card", "Digital Wallet"],
+  "currenciesAccepted": "INR",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "25000",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "hasMap": "https://www.google.com/maps/place/22.997534,72.4986038",
+  "isAccessibleForFree": false,
+  "smokingAllowed": false,
+  "publicAccess": true,
+  "parentOrganization": {
+    "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Ahmedabad"
+    },
+    {
+      "@type": "City",
+      "name": "Mumbai"
+    },
+    {
+      "@type": "City",
+      "name": "Delhi"
+    },
+    {
+      "@type": "City",
+      "name": "Bangalore"
+    },
+    {
+      "@type": "State", 
+      "name": "Gujarat"
+    },
+    {
+      "@type": "State", 
+      "name": "India"
+    }
+  ],
+  "slogan": "Premier Gaming Platform - Win Big Every Day",
+  "knowsAbout": [
+    "Color Prediction Games",
+    "Lottery Games", 
+    "Casino Games",
+    "Sports Betting",
+    "Live Games",
+    "Mobile Gaming",
+    "UPI Payments",
+    "Cryptocurrency Gaming"
+  ],
+  "serviceArea": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+     "latitude": 22.997534,
+      "longitude": 72.4986038
+    },
+    "geoRadius": "2000000"
   }
 }
 </script>

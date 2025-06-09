@@ -11,7 +11,7 @@ featured: false
 difficulty: "All Levels"
 time_required: "4 minutes read"
 draft: false
-url: "/deposit-moeny/"
+url: "/deposit-money/"
 ---
 
 **Deposit Money in Daman Games - Instant & Secure**

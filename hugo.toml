@@ -68,6 +68,55 @@ defaultContentLanguage = 'en'
   pre = "🏠"
 
 [[menu.main]]
+  name = "GAME GUIDES"
+  url = "#"
+  weight = 20
+  pre = "📖"
+  identifier = "game-guides"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "DAMAN GAMES LOGIN"
+    url = "/login-daman-games/"
+    weight = 21
+    pre = "📝"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "DAMAN GAME REGISTER"
+    url = "/register-daman-games/"
+    weight = 22
+    pre = "🔑"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "DEPOSIT MONEY"
+    url = "#"
+    weight = 23
+    pre = "💰"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "WITHDRAW MONEY"
+    url = "#"
+    weight = 24
+    pre = "💸"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "DOWNLOAD APP"
+    url = "#"
+    weight = 25
+    pre = "📱"
+
+  [[menu.main]]
+    parent = "game-guides"
+    name = "ACCESS LINKS"
+    url = "#"
+    weight = 26
+    pre = "🔗"
+
+[[menu.main]]
   name = "Daman Games's Blog"
   url = "/blog/"
   weight = 40

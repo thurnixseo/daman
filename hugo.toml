@@ -91,13 +91,13 @@ defaultContentLanguage = 'en'
   [[menu.main]]
     parent = "game-guides"
     name = "DEPOSIT MONEY"
-    url = "#"
+    url = "/deposit-money/"
     weight = 23
     pre = "💰"
 
   [[menu.main]]
     parent = "game-guides"
-    name = "WITHDRAW MONEY"
+    name = "/withdraw-money/"
     url = "#"
     weight = 24
     pre = "💸"
@@ -105,14 +105,14 @@ defaultContentLanguage = 'en'
   [[menu.main]]
     parent = "game-guides"
     name = "DOWNLOAD APP"
-    url = "#"
+    url = "/download-app/"
     weight = 25
     pre = "📱"
 
   [[menu.main]]
     parent = "game-guides"
     name = "ACCESS LINKS"
-    url = "#"
+    url = "/access-links/"
     weight = 26
     pre = "🔗"
 

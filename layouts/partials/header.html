@@ -66,21 +66,21 @@
                     {{ with .Site.Params.auth.loginUrl }}{{ $loginUrl = . }}{{ end }}
                     {{ with .Site.Params.auth.registerUrl }}{{ $registerUrl = . }}{{ end }}
                     
-                    <a href="{{ $loginUrl }}" 
+                    <a href="{{ $loginUrl }}" rel="nofollow"
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         {{ $loginText }}
                     </a>
                     
-                    <a href="{{ $registerUrl }}" 
+                    <a href="{{ $registerUrl }}" rel="nofollow"
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         {{ $registerText }}
                     </a>
                 {{ else }}
-                    <a href="/#/" 
+                    <a href="/#/" rel="nofollow"
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         ĐĂNG NHẬP
                     </a>
-                    <a href="/#/" 
+                    <a href="/#/" rel="nofollow"
                        class="bg-game-primary hover:bg-orange-600 text-white px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-colors font-medium text-xs sm:text-sm uppercase tracking-wide">
                         ĐĂNG KÝ
                     </a>

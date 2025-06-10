@@ -1,1 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tag_displays on Daman Games</title><link>https://daman-game.world/tag_displays/</link><description>Recent content in Tag_displays on Daman Games</description><generator>Hugo</generator><language>en-IN</language><atom:link href="https://daman-game.world/tag_displays/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag_displays on Daman Games</title>
+    <link>http://localhost:1313/tag_displays/</link>
+    <description>Recent content in Tag_displays on Daman Games</description>
+    <generator>Hugo</generator>
+    <language>en-IN</language>
+    <atom:link href="http://localhost:1313/tag_displays/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

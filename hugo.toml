@@ -111,8 +111,8 @@ defaultContentLanguage = 'en'
 
   [[menu.main]]
     parent = "game-guides"
-    name = "ACCESS LINKS"
-    url = "/access-links/"
+    name = "ACCESS LINK"
+    url = "/access-link/"
     weight = 26
     pre = "🔗"
 

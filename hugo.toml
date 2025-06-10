@@ -109,13 +109,6 @@ defaultContentLanguage = 'en'
     weight = 25
     pre = "📱"
 
-  [[menu.main]]
-    parent = "game-guides"
-    name = "ACCESS LINK"
-    url = "/access-link/"
-    weight = 26
-    pre = "🔗"
-
 [[menu.main]]
   name = "Daman Games's Blog"
   url = "/blog/"

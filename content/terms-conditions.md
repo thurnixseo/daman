@@ -1,5 +1,6 @@
 ---
 title: "Terms & Conditions"
+date: "2025-06-10"
 description: "Read the official Terms and Conditions for using Daman Game. By creating an account and using our services, you agree to these rules, obligations, and user conduct policies."
 draft: false
 ---

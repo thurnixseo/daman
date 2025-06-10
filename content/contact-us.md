@@ -1,5 +1,6 @@
 ---
 title: "Contact Us"
+date: "2025-06-10"
 description: "Get in touch with the Daman Game support team. Find our contact email, phone number, and office address for any questions, support, or inquiries."
 draft: false
 ---

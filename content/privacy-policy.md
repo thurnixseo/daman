@@ -1,5 +1,6 @@
 ---
 title: "Privacy Policy"
+date: "2025-06-10"
 description: "Our Privacy Policy explains how Daman Game collects, uses, and protects your data. Learn about your rights, our detailed cookie policy, and how to contact us."
 draft: false
 ---

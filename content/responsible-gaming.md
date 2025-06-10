@@ -1,11 +1,9 @@
 ---
 title: "Responsible Gaming"
+date: "2025-06-09"
 description: "Learn about Daman Game's commitment to responsible gaming. We provide tools like deposit limits, self-exclusion, and resources to help you play safely and stay in control."
 draft: false
 ---
-
-**Last Updated: June 11, 2025**
-
 ### 1. Our Commitment
 
 Daman Game is committed to providing a safe, fair, and responsible gaming environment. We want all our players to enjoy our games as a form of entertainment, and we recognize that for a small minority, gaming can cease to be fun and become a problem. This policy is designed to help you stay in control of your gaming and to provide support if you need it.

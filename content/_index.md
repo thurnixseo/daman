@@ -14,7 +14,7 @@ schemas:
     subtitle="Premier Gaming Entertainment Platform in India" 
     cta1Text="REGISTER NOW" 
     cta1Link="https://damanclub.in/#/register?invitationCode=2488315945508" 
-    cta2Text="PLAY GAMES" 
+    cta2Text="LOGIN NOW" 
     cta2Link="https://damanclub.in/#/register?invitationCode=2488315945508" 
 >}}
 

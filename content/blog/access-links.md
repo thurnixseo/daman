@@ -11,7 +11,7 @@ featured: false
 difficulty: "Easy"
 time_required: "2 minutes read"
 draft: false
-url: "/access-link/"
+url: "/access-links/"
 ---
 
 **Accessing Daman Games - Your Secure Gateway**

@@ -2,8 +2,8 @@
 title: "Complete Daman Games Deposit Guide 2025"
 date: 2025-06-09T00:15:00+07:00
 categories: ["blog"]
-tags: ["daman-games-deposit", "daman-deposit-money", "daman-payment-methods", "daman-games-funding", "daman-upi-deposit"]
-tag_display: ["daman games deposit", "daman deposit money", "daman payment methods", "daman games funding", "daman upi deposit"]
+tags: ["daman-games-deposit", "daman-deposit-money", "daman-payment-methods", "daman-games-funding", "daman-upi-deposit", "daman-games-guide"]
+tag_display: ["daman games deposit", "daman deposit money", "daman payment methods", "daman games funding", "daman upi deposit", "daman games guide"]
 image: "/images/daman-games-deposit-guide.webp"
 description: "Complete guide to deposit money in Daman Games 2025. Secure payment methods, instant deposits via UPI, net banking, cards with step-by-step instructions and bonus offers."
 author: "Daman Games Expert"

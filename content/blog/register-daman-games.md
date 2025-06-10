@@ -19,7 +19,7 @@ url: "/register-daman-games/"
 
 **Ready to join millions of players?** Daman Games offers the most exciting gaming experience in India with instant rewards and secure gameplay.
 ![Daman Games Registration Guide 2025](/images/daman-games-hero-banner.webp)
-[**REGISTER NOW**](https://daman-game.world) | [**PLAY GAMES**](https://daman-game.world)
+[**REGISTER NOW**](https://damanclub.in/#/register?invitationCode=2488315945508) | [**PLAY GAMES**](https://damanclub.in/#/register?invitationCode=2488315945508)
 
 ---
 

@@ -20,7 +20,7 @@ url: "/download-app/"
 **Elevate your gaming experience with the official Daman Games app!** Download today to enjoy superior speed, biometric security, promotional offers exclusively for app users, and an interface perfectly optimized for your mobile device.
 
 ![Download Daman Games App 2025](/images/daman-games-app-banner.webp)
-[**DOWNLOAD FOR ANDROID**](#download-android) | [**DOWNLOAD FOR IOS**](#download-ios)
+[**DOWNLOAD FOR ANDROID**](https://damanclub.in/#/register?invitationCode=2488315945508) | [**DOWNLOAD FOR IOS**](https://damanclub.in/#/register?invitationCode=2488315945508)
 
 ---
 

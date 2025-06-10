@@ -20,7 +20,7 @@ url: "/withdraw-money/"
 **Ready to enjoy your winnings?** Withdraw money instantly from **Daman Games** with verified payment methods, ensuring your funds reach your account safely and efficiently.
 
 ![Daman Games Withdrawal Guide 2025](/images/daman-games-withdrawal-banner.webp)
-[**WITHDRAW NOW**](https://daman-game.world) | [**VIEW TRANSACTION HISTORY**](https://daman-game.world)
+[**WITHDRAW NOW**](https://damanclub.in/#/register?invitationCode=2488315945508) | [**VIEW TRANSACTION HISTORY**](https://damanclub.in/#/register?invitationCode=2488315945508)
 
 ---
 

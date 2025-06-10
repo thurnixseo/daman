@@ -13,9 +13,9 @@ schemas:
     title="Welcome to Daman Games" 
     subtitle="Premier Gaming Entertainment Platform in India" 
     cta1Text="REGISTER NOW" 
-    cta1Link="https://daman-game.world/register" 
+    cta1Link="https://damanclub.in/#/register?invitationCode=2488315945508" 
     cta2Text="PLAY GAMES" 
-    cta2Link="https://daman-game.world/games" 
+    cta2Link="https://damanclub.in/#/register?invitationCode=2488315945508" 
 >}}
 
 <!-- Small gap between sections -->
@@ -320,7 +320,7 @@ schemas:
     <div class="bg-gradient-to-r from-blue-700 to-purple-800 rounded-2xl p-8 text-white">
       <h3 class="text-2xl font-bold mb-4">Ready to Start Your Gaming Journey?</h3>
       <p class="text-blue-100 mb-6">Join thousands of players who trust <strong>Daman Games</strong> for their entertainment</p>
-      <a href="https://daman-game.world/register" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors inline-block">
+      <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-colors inline-block">
         Register Now & Get Bonus
       </a>
     </div>
@@ -334,7 +334,7 @@ schemas:
     title="Special Welcome Offer" 
     subtitle="Get Up To ₹10,000 Welcome Bonus + 100 Free Spins" 
     ctaText="CLAIM BONUS NOW" 
-    ctaLink="https://daman-game.world/register" 
+    ctaLink="https://damanclub.in/#/register?invitationCode=2488315945508" 
 >}}
 
 <div class="py-8"></div>
@@ -393,13 +393,13 @@ schemas:
       </div>
       
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="https://daman-game.world/download/android" class="bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 px-6 rounded-xl hover:from-green-600 hover:to-green-700 transition-all flex items-center justify-center">
+        <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="bg-gradient-to-r from-green-500 to-green-600 text-white font-bold py-3 px-6 rounded-xl hover:from-green-600 hover:to-green-700 transition-all flex items-center justify-center">
           <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
             <path d="M17.523 15.3414c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm-11.046 0c-.5511 0-.9993-.4482-.9993-.9993s.4482-.9993.9993-.9993.9993.4482.9993.9993-.4482.9993-.9993.9993zm11.4653-6.02l.0028-.002L10 1.9999 1.9999 10l.0028.002C1.9999 10.002 2 10.0028 2 10.0039v.0059l.9999.9999L12 2l9.0001 8.9999L22 10.9999v-.0059c0-.0011.0001-.0019.0001-.0039l-.0028-.002z"/>
           </svg>
           Download for Android
         </a>
-        <a href="https://daman-game.world/download/ios" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all flex items-center justify-center">
+        <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="bg-gradient-to-r from-blue-500 to-blue-600 text-white font-bold py-3 px-6 rounded-xl hover:from-blue-600 hover:to-blue-700 transition-all flex items-center justify-center">
           <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
           </svg>
@@ -594,10 +594,10 @@ schemas:
         Dedicated payment assistance team available round the clock for any transaction queries
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="https://daman-game.world/support" class="bg-white text-green-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors">
+        <a href="https://daman-game.world/contact" class="bg-white text-green-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors">
           Contact Support
         </a>
-        <a href="https://daman-game.world/deposit" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-xl hover:bg-white hover:text-green-600 transition-colors">
+        <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-xl hover:bg-white hover:text-green-600 transition-colors">
           Make Deposit
         </a>
       </div>
@@ -704,7 +704,7 @@ schemas:
       </div>
       
       <div class="mt-6 text-center">
-        <a href="https://daman-game.world/responsible-gaming" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
+        <a href="https://daman-game.world/blog/" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
           Learn More About Safe Gaming
         </a>
       </div>
@@ -722,7 +722,7 @@ schemas:
         <div class="text-3xl mb-3">🤝</div>
         <h4 class="font-bold text-white mb-2">Gambling Therapy</h4>
         <p class="text-gray-300 text-sm mb-4">Free online counseling and support</p>
-        <a href="https://www.gamblingtherapy.org" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
+        <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
           Visit Website
         </a>
       </div>
@@ -731,8 +731,8 @@ schemas:
         <div class="text-3xl mb-3">📞</div>
         <h4 class="font-bold text-white mb-2">Helpline India</h4>
         <p class="text-gray-300 text-sm mb-4">24/7 addiction support hotline</p>
-        <a href="tel:+911800110031" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
-          Call: 1800-110-031
+        <a href="tel:+919327000520" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
+          Call: +91 93270 00520
         </a>
       </div>
       
@@ -740,7 +740,7 @@ schemas:
         <div class="text-3xl mb-3">💚</div>
         <h4 class="font-bold text-white mb-2">BeGambleAware</h4>
         <p class="text-gray-300 text-sm mb-4">Information and support tools</p>
-        <a href="https://www.begambleaware.org" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
+        <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="text-blue-400 font-medium text-sm hover:text-blue-300 transition-colors">
           Get Help
         </a>
       </div>
@@ -1000,7 +1000,7 @@ schemas:
       </div>
       
       <div class="mt-6 text-center">
-        <a href="https://daman-game.world/news" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors">
+        <a href="https://daman-game.world/blog" class="bg-white text-blue-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors">
           Read All Updates
         </a>
       </div>
@@ -1094,8 +1094,8 @@ schemas:
       showRegister="true" 
       loginText="LOGIN NOW" 
       registerText="JOIN DAMAN GAMES" 
-      loginUrl="https://daman-game.world/login" 
-      registerUrl="https://daman-game.world/register"
+      loginUrl="https://damanclub.in/#/register?invitationCode=2488315945508" 
+      registerUrl="https://damanclub.in/#/register?invitationCode=2488315945508"
       size="lg"
       layout="horizontal"
   >}}
@@ -1104,7 +1104,7 @@ schemas:
     <div class="bg-gradient-to-r from-green-600 to-blue-700 rounded-2xl p-8 text-white border border-white/20">
       <h4 class="text-2xl font-bold mb-4 text-white">🎁 Welcome Bonus</h4>
       <p class="text-green-100 mb-4">Get up to ₹10,000 bonus on your first deposit plus 100 free spins</p>
-      <a href="https://daman-game.world/register" class="bg-white text-green-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
+      <a href="https://damanclub.in/#/register?invitationCode=2488315945508" class="bg-white text-green-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
         Claim Bonus
       </a>
     </div>
@@ -1112,7 +1112,7 @@ schemas:
     <div class="bg-gradient-to-r from-purple-600 to-pink-700 rounded-2xl p-8 text-white border border-white/20">
       <h4 class="text-2xl font-bold mb-4 text-white">📱 Mobile App</h4>
       <p class="text-purple-100 mb-4">Download our app for exclusive mobile bonuses and faster gameplay</p>
-      <a href="https://daman-game.world/download" class="bg-white text-purple-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
+      <a href="https://daman-game.world/download-app" class="bg-white text-purple-600 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-colors inline-block">
         Download App
       </a>
     </div>

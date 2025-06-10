@@ -20,7 +20,7 @@ url: "/deposit-money/"
 **Ready to boost your gaming balance?** Deposit money instantly on **Daman Games** with multiple secure payment methods and enjoy instant crediting with attractive deposit bonuses up to 100%.
 
 ![Daman Games Deposit Guide 2025](/images/daman-games-deposit-banner.webp)
-[**DEPOSIT NOW**](https://daman-game.world) | [**VIEW BONUSES**](https://daman-game.world)
+[**DEPOSIT NOW**](https://damanclub.in/#/register?invitationCode=2488315945508) | [**VIEW BONUSES**](https://damanclub.in/#/register?invitationCode=2488315945508)
 
 ---
 

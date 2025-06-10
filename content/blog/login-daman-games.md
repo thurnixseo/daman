@@ -19,7 +19,7 @@ url: "/login-daman-games/"
 
 **Ready to play and win?** Access your Daman Games account in seconds with our secure login system and jump straight into exciting games with real money rewards.
 ![Daman Games Login Guide 2025](/images/daman-games-login-banner.webp)
-[**LOGIN NOW**](https://daman-game.world) | [**FORGOT PASSWORD?**](https://daman-game.world)
+[**LOGIN NOW**](https://damanclub.in/#/register?invitationCode=2488315945508) | [**FORGOT PASSWORD?**](https://damanclub.in/#/register?invitationCode=2488315945508)
 
 ---
 

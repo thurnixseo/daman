@@ -6,6 +6,7 @@
         {{ with .Params.image }}
         <!-- Featured Image Hero -->
         <div class="relative h-96 bg-cover bg-center" style="background-image: url('{{ . }}')">
+            <div class="absolute inset-0 bg-black/60"></div> 
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-game-secondary/30 to-transparent"></div>
         {{ else }}
@@ -19,21 +20,20 @@
                 <div class="container mx-auto px-4">
                     <div class="max-w-4xl">
                         <!-- Breadcrumb -->
-                        <nav class="flex items-center space-x-2 text-sm text-gray-300 mb-6">
-                            <a href="/" class="hover:text-white transition-colors">🏠 Daman Games Homepage</a>
-                            <span>→</span>
-                            {{ with .Section }}
-                                {{ $section := $.Site.GetPage (printf "/%s" .) }}
-                                {{ if $section }}
-                                    <a href="{{ $section.Permalink }}" class="hover:text-white transition-colors">
-                                        {{ $section.Title }}
-                                    </a>
-                                    <span>→</span>
-                                {{ end }}
-                            {{ end }}
-                            <span class="text-white">{{ .Title }}</span>
-                        </nav>
-                        
+<nav class="flex items-center flex-wrap text-sm text-gray-300 mb-6">
+    <a href="/" class="hover:text-white transition-colors whitespace-nowrap">🏠 Daman Games</a>
+    <span class="mx-1">→</span>
+    {{ with .Section }}
+        {{ $section := $.Site.GetPage (printf "/%s" .) }}
+        {{ if $section }}
+            <a href="{{ $section.Permalink }}" class="hover:text-white transition-colors whitespace-nowrap">
+                {{ $section.Title }}
+            </a>
+            <span class="mx-1">→</span>
+        {{ end }}
+    {{ end }}
+    <span class="text-white">{{ .Title }}</span>
+</nav>
                         <!-- Title -->
                         <h1 class="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
                             {{ .Title }}

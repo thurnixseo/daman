@@ -97,8 +97,8 @@ defaultContentLanguage = 'en'
 
   [[menu.main]]
     parent = "game-guides"
-    name = "/withdraw-money/"
-    url = "#"
+    name = "WITHDRAW MONEY"
+    url = "withdraw-money"
     weight = 24
     pre = "💸"
 

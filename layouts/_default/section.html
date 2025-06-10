@@ -44,7 +44,7 @@
                     </a>
                     {{ range .Site.Taxonomies.tags }}
                         {{ if gt .Count 2 }}
-                        <a href="/tags/{{ .Page.Title | urlize }}/" class="bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm transition-colors">
+                        <a href="/tag/{{ .Page.Title | urlize }}/" class="bg-gray-700 hover:bg-gray-600 text-gray-300 hover:text-white px-4 py-2 rounded-lg text-sm transition-colors">
                             #{{ .Page.Title }}
                         </a>
                         {{ end }}

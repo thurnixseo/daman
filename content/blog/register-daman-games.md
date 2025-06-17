@@ -1,6 +1,6 @@
 ---
 title: "Complete Daman Games Registration Guide 2025"
-date: 2025-06-09T00:15:00+07:00
+date: "2025-06-09"
 categories: ["blog"]
 tags: ["daman-games-register", "daman-account", "daman-guide", "daman-games-latest", "daman-bonus", "daman-games-guide"]
 tag_display: ["daman games register", "daman account", "daman guide", "daman games latest", "daman bonus", "daman games guide"]

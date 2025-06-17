@@ -1,6 +1,6 @@
 ---
 title: "Complete Daman Games Withdrawal Guide 2025"
-date: 2025-06-09T00:15:00+07:00
+date: "2025-06-09"
 categories: ["blog"]
 tags: ["daman-games-withdrawal", "daman-withdraw-money", "daman-withdrawal-methods", "daman-games-payout", "daman-bank-transfer", "daman-games-guide"]
 tag_display: ["daman games withdrawal", "daman withdraw money", "daman withdrawal methods", "daman games payout", "daman bank transfer", "daman games guide"]

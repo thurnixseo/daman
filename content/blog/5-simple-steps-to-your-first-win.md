@@ -1,6 +1,6 @@
 ---
 title: "5 Simple Steps to Your First Win on Daman Games"
-date: 2025-06-10
+date: "2025-06-10"
 categories: ["blog"]
 tags: ["daman-games-win", "daman-games-strategy", "easy-daman-win", "beginner-tips-daman", "win-go-strategy", "daman-games-tips"]
 tag_display: ["daman games win", "daman games strategy", "easy daman win", "beginner tips daman", "win go strategy", "daman games tips"]

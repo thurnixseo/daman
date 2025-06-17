@@ -1,6 +1,6 @@
 ---
 title: "Bankroll Management for Daman Gamers: Play Smarter, Not Harder"
-date: 2025-06-10
+date: "2025-06-10"
 categories: ["blog"]
 tags: ["daman-bankroll", "daman-money-management", "play-smart-daman", "responsible-gaming", "daman-games-tips"]
 tag_display: ["daman bankroll", "daman money management", "play smart daman", "responsible gaming", "daman games tips"]

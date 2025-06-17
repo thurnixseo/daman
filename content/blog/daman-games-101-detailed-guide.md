@@ -1,6 +1,6 @@
 ---
 title: "Daman Games 101: Your Ultimate and Detailed Guide to Getting Started"
-date: 2025-06-10T10:20:00+07:00
+date: "2025-06-10"
 categories: ["blog"]
 tags: ["daman-games-guide", "daman-beginners", "how-to-play-daman", "daman-games-tutorial", "daman-games-101", "daman-registration", "daman-first-deposit"]
 tag_display: ["daman games guide", "daman beginners", "how to play daman", "daman games tutorial", "daman games 101", "daman registration", "daman first deposit"]

@@ -1,6 +1,6 @@
 ---
 title: "The Rise of Online Gaming: How Daman Games is Changing the Indian Landscape."
-date: 2025-07-09
+date: "2025-06-17"
 categories: ["blog"]
 tags: ["online-gaming-india", "daman-games-impact", "digital-transformation-india", "indian-gaming-market-growth", "daman-games-future"]
 tag_display: ["Online Gaming India", "Daman Games Impact", "Digital Transformation India", "Indian Gaming Market Growth", "Daman Games Future"]

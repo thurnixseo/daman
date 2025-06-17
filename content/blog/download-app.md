@@ -1,6 +1,6 @@
 ---
 title: "Daman Games App Download Guide 2025 (Android & iOS)"
-date: 2025-06-10T11:30:00+07:00
+date: "2025-06-09"
 categories: ["blog"]
 tags: ["daman-games-app-download", "daman-apk", "daman-ios-app", "download-daman-games", "daman-app-install", "daman-games-guide"]
 tag_display: ["daman games app download", "daman apk", "daman ios app", "download daman games", "daman app install", "daman games guide"]

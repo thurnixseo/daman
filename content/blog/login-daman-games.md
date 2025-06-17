@@ -1,6 +1,6 @@
 ---
 title: "Complete Daman Games Login Guide 2025"
-date: 2025-06-09T00:15:00+07:00
+date: "2025-06-09"
 categories: ["blog"]
 tags: ["daman-games-login", "daman-account-login", "daman-signin", "daman-games-access", "daman-mobile-login", "daman-games-guide"]
 tag_display: ["daman games login", "daman account login", "daman signin", "daman games access", "daman mobile login", "daman games guide"]

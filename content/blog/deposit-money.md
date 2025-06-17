@@ -1,6 +1,6 @@
 ---
 title: "Complete Daman Games Deposit Guide 2025"
-date: 2025-06-09T00:15:00+07:00
+date: "2025-06-09"
 categories: ["blog"]
 tags: ["daman-games-deposit", "daman-deposit-money", "daman-payment-methods", "daman-games-funding", "daman-upi-deposit", "daman-games-guide"]
 tag_display: ["daman games deposit", "daman deposit money", "daman payment methods", "daman games funding", "daman upi deposit", "daman games guide"]

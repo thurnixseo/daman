@@ -1,6 +1,6 @@
 ---
 title: "The #1 Mistake New Daman Games Players Make (And How to Avoid It)"
-date: 2025-06-10
+date: "2025-06-10"
 categories: ["blog"]
 tags: ["daman-games-mistakes", "daman-games-tips", "avoid-losses-daman", "responsible-gaming", "daman-strategy"]
 tag_display: ["daman games mistakes", "daman games tips", "avoid losses daman", "responsible gaming", "daman strategy"]

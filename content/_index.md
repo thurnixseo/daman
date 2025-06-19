@@ -784,7 +784,7 @@ schemas:
             <div>
               <h4 class="text-xl font-bold text-white">Phone Support</h4>
               <p class="text-gray-300">Toll-free Indian customer service line</p>
-              <span class="text-sm text-green-400 font-medium">• 1800-DAMAN-GAME</span>
+              <span class="text-sm text-green-400 font-medium">• +91 93270 00520</span>
             </div>
           </div>
         </div>
@@ -810,7 +810,7 @@ schemas:
             <div>
               <h4 class="text-xl font-bold text-white">WhatsApp Support</h4>
               <p class="text-gray-300">Quick queries through messaging</p>
-              <span class="text-sm text-green-400 font-medium">• +91-XXXX-DAMAN</span>
+              <span class="text-sm text-green-400 font-medium">• +91 93270 00520</span>
             </div>
           </div>
         </div>

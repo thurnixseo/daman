@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             </h2>
                             
                             <!-- Summary -->
-                            <p class="text-white mb-4 leading-relaxed text-base">{{ .Summary | truncate 120 }}</p>
+                                                        <p class="text-white text-sm">{{ .Params.description | default .Summary | truncate 120 }}</p>
                             
                             <!-- Read More -->
                             <div class="flex justify-between items-center">
